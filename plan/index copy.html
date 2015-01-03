@@ -1,0 +1,1912 @@
+<!doctype html>
+<html lang="en" manifest="vqplanapp.appcache">
+<head>
+
+<link href="/font-awesome.min.css" rel="stylesheet">
+<base target="_parent" />
+<meta charset="UTF-8" />
+
+<meta name="description" content="Toolkit of lesson planning ideas. Prewritten lesson ideas that can be applied to any subject. Plan lessons very quickly." />
+<meta name="keywords" content="lesson planning,very quick,generator,build,builder,producer,template,teaching,teachers,education,educational,creative,lesson ideas,lesson planning website,English,EFL,TOEFL,TEFL,Geography,Science,Chemistry,Physics,Maths,Biology,French,German,RE,Religious Education,Humanities,History," />
+<meta name="author" content="Niel Ryan" />
+<meta name="dcterms.rightsHolder" content="(c) Niel Ryan, VQplan.com 2015 All Rights Reserved v2.1">
+
+<link rel="shortcut icon" href="favicon.ico" />
+
+<title>plan</title>
+<!--plan.com Very Quick Lesson Planning -->
+<style type="text/css">
+
+@media print
+{    
+	* { background: transparent !important; color: black !important; opacity:1 !important;text-shadow: none !important; filter:none !important; -ms-filter: none !important; height: auto !important;width: 100% !important;}
+	
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    
+    
+    #idDivThePlan
+    {
+	    width: 100%;
+	    height: auto;
+	    overflow-y: visible !important;
+	    height: auto !important;
+	    display: block !important;
+	    page-break-after: avoid;
+  page-break-inside: avoid;
+    }
+}
+
+
+h1
+{  
+opacity: 0.25;
+color:darkblue;
+padding-top: 0px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+margin-top:6px;
+}  
+
+
+h1:hover
+{  
+    -webkit-animation-name: thefader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 4.2s;
+    animation-name: thefader;
+    animation-iteration-count: 1;
+    animation-duration: 4.2s;
+    color:darkgreen;
+border-width: thick;
+}  
+
+
+h1:focus
+{
+opacity: 1;
+
+}
+
+
+
+h2 
+{  
+opacity: 0.2;
+font-size: 20px;  
+vertical-align: middle;
+padding: 0px;
+padding-top: 2px;
+padding-bottom: 8px;
+margin-bottom: 0;
+margin-top: 0;
+font-style: normal;
+font-weight: normal;
+font-family: inherit;
+}  
+
+
+  @-webkit-keyframes thefader {
+    from, to  {
+	     cursor: text;
+	     opacity: 1;
+	    
+      -webkit-animation-timing-function: ease-in;
+   
+    }
+    100% {
+	    cursor: none;
+	       opacity: 0.2;
+	       
+      -webkit-animation-timing-function: ease-out;
+     
+    }
+  }
+  @keyframes thefader {
+    from, to  {
+     opacity: 1;
+     cursor: text;
+      animation-timing-function: ease-in;
+
+    }
+    100% {
+	     opacity: 0.2;
+	     cursor: none;
+      animation-timing-function: ease-out;
+          }
+  }
+
+h2:hover
+{  
+
+color:darkgreen;
+border-width: thick;
+
+
+    -webkit-animation-name: thefader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 4.2s;
+    animation-name: thefader;
+    animation-iteration-count: 1;
+    animation-duration: 4.2s;
+}  
+
+h2:focus
+{
+opacity: 1;
+}
+
+a
+{
+	opacity: 0.4;
+}
+
+a:hover
+{
+	opacity: 1;
+color:darkgreen;
+border-width: thick;
+}
+
+a:focus
+{
+	opacity: 1;
+}
+
+h5
+{
+font-size: 16px;  
+vertical-align: middle;
+padding: 0;
+margin:0;
+font-family: inherit;
+background:white;
+}
+
+
+
+h6 
+{  
+font-size: 16px;  
+line-height: 16px;  
+vertical-align: middle;
+padding: 0;
+margin:0;
+
+
+}  
+
+h6:hover
+{
+	cursor: pointer;
+color: darkgreen;
+	background: pink;
+}
+
+
+
+html
+{
+	font-family: courier;
+	background:red;
+margin:0;
+padding:0;
+height:100%;
+width:100%;
+}
+body
+{
+font-family: courier;
+background:orange;
+margin:0;
+padding:0;
+height:100%;
+width:100%;
+}
+
+#idDivWrapperBody {
+	background: pink;
+padding:0;
+min-height:100%;
+height: auto;
+position:relative;
+display:block;
+clear:both;
+}
+
+
+#idDivWrapperContent
+{
+background:lightgreen;
+padding:0;
+margin:0%,5%,0%,5%;
+display:block;
+min-height: 100%;
+width: 100%;
+position: absolute;
+height: auto;
+}
+
+#idDivStartNewPlanContainer
+{
+position:relative;top:0;left:0;width:100%;background:transparent;
+}
+
+
+#idDivHeaderContainer
+{ 
+position:absolute;
+width: 100%;
+top:0;
+left:0;
+margin:0;
+padding:0;
+height:1.5em;
+background:black;
+color:white;
+clear: both;
+display: block;
+visibility: visible;
+z-index: 10;
+}
+
+
+
+#idDivHeaderLeft
+{
+padding: 0;
+margin: 0;
+position: absolute;
+left:2%;
+
+}
+
+#idDivHeaderRight
+{
+padding: 0;
+margin: 0;
+position: absolute;
+right:2%;
+height: 1.5em;
+}
+
+
+#idDivFooterContainer{
+	padding: 0;
+margin: 0;
+height:1.5em;
+width:100%;
+bottom: 0;
+left: 0;
+background: silver;
+display: block;
+clear: both;
+float: left;
+z-index: 999;
+position:relative;
+}
+
+#idDivFooterLeft
+{
+padding: 0;
+margin: 0;
+position: absolute;	
+left:2%;
+clear:both;
+display:block;
+}
+#idDivFooterRight
+{
+padding: 0;
+margin: 0;
+position: absolute;
+right:2%;
+clear:both;
+display:block;
+}
+
+#idDivCreate
+{
+
+
+}
+
+#idDivThePlan
+{
+	position: relative;
+background-color: #fffaf4;
+margin-top: 4%;
+float: left;
+width:54%;
+margin-left: 4%;
+}
+
+
+
+
+.styleorange
+{
+background:#fdefd2;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+.stylered
+{
+background:#ffdddd;
+}
+
+.styleyellow
+{
+
+background:#eaf3bb;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+.stylegreen
+{
+
+background:#bfdabf;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+.styleblue
+{
+
+background:lightblue;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+.styleindigo
+{
+
+background:#dbc8e8;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+
+
+.styleviolet
+{
+
+background:#ebadeb;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+
+.styleuviolet
+{
+background:#ffd0ea;
+-moz-column-count: auto;
+-moz-column-width: 200px;
+-webkit-column-count: auto;
+-webkit-column-width: 200px;
+column-count: auto;
+column-width: 200px;
+}
+
+
+
+.stylewhite
+{
+background:white;
+}
+
+
+.vqplan
+{
+font-size: medium;
+color: black; 
+margin-top: 10px;
+background-color: #e6e6e6;
+border:2px solid lightgray;
+}
+
+
+
+
+.vqplan:hover
+{   
+color: black; 
+margin-top: 10px;
+background-color: #c5c5c5;
+border:2px solid black;  
+cursor: pointer;
+}
+
+
+button
+{
+font-family: courier;
+}
+
+.classLessonIdea
+{
+	
+}
+
+
+#idTextareaTextForCopying
+{
+height: 150px;
+width:99%;
+}
+
+.vqhelp
+{
+position: relative;
+float: right;
+width:36%;
+padding-right:4%;
+margin-top:60px;
+top:0;
+height:600%;
+}
+
+
+
+
+</style>
+
+
+
+<script>
+
+//global variables
+
+var thetext = ""
+var input=""; 
+var cursorPosition="";
+
+var keyw = {};
+var obje = {};
+var star = {};
+var acti = {};
+var plen = {};
+var home = {};
+var reso = {};
+var remi = {};
+var stan = {};
+
+
+//document.cookie="username=Niel Ryyan";
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+        user = prompt("Please enter your name:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+setCookie("username", "john", "10000");
+//alert(getCookie("username"));
+
+
+
+function maintainFocus()
+{
+var view = document.getElementById("idDivStartNewPlanContainer").style.display;
+if(view = "block")  {document.getElementById("idInputTopic").focus()}
+}
+
+//var fp = "";
+
+function copyBelow()
+{
+var fp = document.getElementById("idDivThePlan").innerText;
+
+var destTextarea = document.getElementById("idTextareaTextForCopying");
+destTextarea.value = fp;
+
+document.getElementById('idDivFooterContainer').scrollIntoView();
+}
+
+
+window.colorArrayPosition = 0;
+function theNextColor(){
+	var arrayColors = ["aff","faf","ffa","faa","afa","aaf","aac","caa","aca","cca","acc","cac","dff","fdf","ffd","daf","fda","afd","dfa","adf","fad"];
+	var theColor = "#"+arrayColors[colorArrayPosition];
+		colorArrayPosition++;
+	if(colorArrayPosition===arrayColors.length)
+	{
+		colorArrayPosition=0;
+	}
+	return theColor;
+}
+
+
+function buttonPressNewPlan()
+{
+	document.title = "VQplan New";
+	location.reload(false);
+}
+
+function buttonPressTimer()
+{
+	document.title = "VQplan Timer";
+//	alert("timer");
+}
+
+
+
+function buttonPressRandomActivity()
+{
+	document.title = "VQplan Ideas";
+//	alert("random ");
+}
+
+
+function buttonPressExperimental()
+{
+	document.title = "VQplan Experimental";
+	
+	//toggleIdDisplayBlockOrDisplayNone('idButtonHome','idButtonTimer');
+	//toggle.hide("idDivWrapperBody");
+
+	document.getElementById("idDivHeaderContainer").style.backgroundColor = theNextColor();
+}
+
+
+ 
+function buttonPressExperimental2()
+{
+	
+	// addURLsToPlan();
+//document.getElementById('idSpanTheURLs').innerHTML="<br>hi<b><br><br>";
+	//alert("Exp 2");
+	
+}
+
+function toggleIdDisplayBlockOrDisplayNone()
+{
+	for ( i=0; i < arguments.length; i++ ) {
+       var e = document.getElementById(arguments[i]);
+      // alert(e.style.display);
+       if(e.style.display === 'block'||e.style.display ==='')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+}
+
+
+
+
+
+</script>
+</head>
+
+<body onkeydown="returnListen(event);" onclick="maintainFocus();"  >
+
+<div id="idDivWrapperBody">
+
+
+
+<div id="idDivWrapperContent" style="overflow:auto;display:block;height:100%;">
+<div id="idDivHeaderContainer" class="no-print"  >
+<div id="idDivHeaderLeft">
+<button  id="idButtonHome" class="classButtonPeripheral" type="button" title="New" onClick="buttonPressNewPlan();"  ><i class="fa fa-edit"></i> New&nbsp;&nbsp;&nbsp; </button>
+
+<button  id="idButtonTimer" class="classButtonPeripheral" type="button" title="Timer" onClick="buttonPressTimer();"  ><i class="fa fa-clock-o"></i> Timer&nbsp;&nbsp;&nbsp; </button>
+
+<button  id="idButtonRandomActivity" class="classButtonPeripheral" type="button" title="Ideas" onClick="buttonPressRandomActivity();"  ><i class="fa fa-lightbulb-o"></i> Ideas&nbsp;&nbsp;&nbsp; </button>
+&nbsp;&nbsp;&nbsp;
+<button  id="idButtonExperimental" class="classButtonPeripheral" type="button" title="Experimental" onClick="buttonPressExperimental();"><i class="fa fa-leaf"></i> Experimental&nbsp;&nbsp;&nbsp; </button>
+<button  id="idButtonExperimental2" class="classButtonPeripheral" type="button" title="Experimental2" oncontextmenu="alert('o');" onClick="buttonPressExperimental2();"><i class="fa fa-leaf"></i> Experimental2&nbsp;&nbsp;&nbsp; </button>
+
+</div><!--end idDivHeaderLeft -->
+
+<div id="idDivHeaderRight">
+</div><!--end idDivHeaderRight -->
+</div><!--end idDivHeaderContainer -->
+
+
+
+
+<script>
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+xmlhttp=new XMLHttpRequest();
+}
+xmlhttp.open("GET","vqplan.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+// document.write("<table><tr><th>Section</th><th>Title</th></tr>");
+var x=xmlDoc.getElementsByTagName("vqplan");
+var data =[];
+for (i=0;i<x.length;i++)
+{ 
+
+var title=(x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue);
+
+var details=(x[i].getElementsByTagName("Details")[0].childNodes[0].nodeValue);
+data.push(x[i].getElementsByTagName("Section")[0].childNodes[0].nodeValue,title,details);
+
+}
+
+
+//document.write(data);
+
+//alert("665");
+
+// put back logo with background:url(vqplan3.gif);background-color: transparent;
+
+function tabIndex()
+{
+	return 12;
+}
+
+
+function copiedThePlan()
+{
+	alert('copy');
+	
+}
+</script>
+
+
+
+
+
+<div id="idDivStartNewPlanContainer" style="overflow:auto;display:block;height:100%;text-align:center;vertical-align:middle;background:inherit;" >
+	
+	
+    <table style="width: 100%; height: 100%;"><tr><td style="vertical-align: middle; text-align: center">
+
+<button  id="idButtonLogo" style="font-size:10vh;" type="button" title="VQ Plan" onClick="buttonPressVQPlan();"  ><span style="color:red;">V</span><span style="color:orange;">Q</span><span style="color:lime;">P</span><span style="color:green;">l</span><span style="color:blue;">a</span><span style="color:fuchsia;">n</span></button>
+<br><br>
+<input id="idInputTopic"  type="search" tabindex="1" autofocus="autofocus" spellcheck="true" autocomplete="on"  onkeydown="handleTabPressTI(event);" onkeypress="handleKeypress(event);" placeholder = "Lesson Topic:" > 		
+<br><br><br>
+
+<button  id="idButtonLeftVeryQuick" class="classButtonCentral" type="button" title="Very Quick" onClick="buttonPressVQPlan();"><i class="fa fa-magic"></i> Very Quick&nbsp;&nbsp;&nbsp;</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button  id="idButtonRightPlan" class="classButtonCentral" type="button" title="Plan" onClick="buttonPressVQPlan();"  ><i class="fa fa-align-justify"></i> Plan&nbsp;&nbsp;&nbsp;</button>
+
+   </td></tr></table>
+</div><!--end idDivStartNewPlanContainer-->
+
+
+
+
+
+
+<div id="idDivCreate" tabindex="11" style="display:none;" onblur="kwFocus();"  > 
+
+
+<div id="idDivThePlan" oncopy="copiedThePlan();"  >
+
+
+<h1 contenteditable="true" style="text-decoration:underline;text-align: center;"  spellcheck="true" onfocus="" >StudyTopic Lesson Plan</h1>
+
+<h2  contenteditable="true">Written By: Niel Ryan</h2>
+
+<h1 contenteditable="true" spellcheck="true" >Objective:</h1>
+<h2 tabindex="2" contenteditable="true" spellcheck="true"  id="objectivestype" onfocus="cursorPosition='objectives';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true" >Keywords: </h1>
+<h2 tabindex="3" contenteditable="true" spellcheck="true" id ="keywordstype" onfocus="cursorPosition='keywords';setEnd();"></h2>
+
+
+<h1  contenteditable="true" spellcheck="true">Starter:</h1>
+<h2 tabindex="4" contenteditable="true" spellcheck="true"  id="starterstype" onfocus="cursorPosition='starters';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true">Activity:</h1>
+<h2 tabindex="5" contenteditable="true" spellcheck="true" id="activitiestype" onfocus="cursorPosition='activities';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true">Plenary:</h1>
+<h2 tabindex="6" contenteditable="true" spellcheck="true" id="plenariestype" onfocus="cursorPosition='plenaries';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true">Homework:</h1>
+<h2 tabindex="7" contenteditable="true" spellcheck="true" id="homeworktype" onfocus="cursorPosition='homework';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true">Resource(s):</h1>
+<h2 tabindex="8" contenteditable="true" spellcheck="true" id="resourcestype" onfocus="cursorPosition='resources';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true">Reminder(s):</h1>
+<h2 tabindex="9" contenteditable="true" spellcheck="true" id="reminderstype" onkeydown="handleTabPress(event);"  onfocus="cursorPosition='reminders';setEnd();"></h2>
+
+<h1  contenteditable="true" spellcheck="true">Standard(s):</h1>
+<h2 tabindex="10"  contenteditable="true" spellcheck="true" id="standardstype" onblur="selectText2('idDivThePlan');" onfocus="cursorPosition='standards';setEnd();" ></h2>
+
+<h1  contenteditable="true" spellcheck="true">Links:</h1>
+
+<h2><span id="idSpanTheURLs"/></h2>
+
+
+
+<br>
+<h2  contenteditable="true" ondblclick="selectText2('idDivThePlan');" >Created using VQplan.com.</h2>
+
+
+
+
+
+
+<div id="idDivExportAction" class="no-print" style="background-color:maroon;">
+
+<button id="idButtonEmail" class="vqplan" type="button" title="Email" style="float:right;" onClick="copyBelow();sendMail2('','',escape(input) +theDate(),escape(document.getElementById('idTextareaTextForCopying').value));">&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonTextFile" class="vqplan" type="button" title=".txt" style="float:right;" onClick="copyBelow();generateTextDoc();">&nbsp;&nbsp;&nbsp;<i class="fa fa-file-text-o"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonWordFile" class="vqplan" type="button" title=".doc" style="float:right;" onClick="copyBelow();sendMail();">&nbsp;&nbsp;&nbsp;<i class="fa fa-file-word-o"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonPowerPointFile" class="vqplan" type="button" title=".pptx" style="float:right;" onClick="copyBelow();sendMail();">&nbsp;&nbsp;&nbsp;<i class="fa fa-file-powerpoint-o"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonSave" class="vqplan" type="button" title="Save" style="float:right;" onClick="">&nbsp;&nbsp;&nbsp;<i class="fa fa-save"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonCopy" class="vqplan" type="button" title="Copy" style="float:right;" onClick="buttonPressidButtonCopy();">&nbsp;&nbsp;&nbsp;<i class="fa fa-copy"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonPrint" class="vqplan" type="button" title="Print" style="float:right;" onClick="printDiv('idDivThePlan');">&nbsp;&nbsp;&nbsp;<i class="fa fa-print"></i>&nbsp;&nbsp;&nbsp;</button>
+
+<br><br>
+<textarea id="idTextareaTextForCopying" style="display:none;" onclick="this.focus();this.select()" onContextMenu="this.focus();this.select()" ></textarea>
+
+</div> <!--end idDivExportAction-->
+
+</div><!--end idDivThePlan-->
+
+</div> <!--end idDivCreate-->
+
+<script>
+	function functionAlert()
+	{
+	//	alert("ok"); StudyTopic
+	}
+	
+		function buttonPressidButtonCopy()
+	{
+	//	alert("ok"); 
+	
+	
+	toggleIdDisplayBlockOrDisplayNone("idTextareaTextForCopying");
+	copyBelow();
+//	selectText('idTextareaTextForCopying');
+document.getElementById("idTextareaTextForCopying").select();
+document.getElementById("idTextareaTextForCopying").focus();
+
+		}
+		
+		function buttonPressidButtonSave()
+		{
+			//
+			
+		}
+		
+		function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+	
+</script>
+
+
+
+
+ 
+
+<div id="idDivQuickIdeas" style="overflow-y:scroll;overflow-x:hidden;position:absolute;display:inline;width:100%;margin-top:5%;padding:0;right:0;height:40%" class="no-print" onmouseup="runn();" >
+
+<div id="keywords" style="display:none;" class="vqhelp" >
+<h5 >Keywords:</h5>
+
+<div class="stylered11">
+<iframe id="idIframeExternalResources" name="nameIframeExternalResource" style="min-height:80%;max-height:80%;width:100%;" onmouseout="startScroll();" onmouseover="stopScroll();" draggable="true" ></iframe>
+
+
+<br>
+
+
+
+<br><br><br><br>
+
+
+
+
+</div>
+</div><!-- end-->
+
+
+<script>
+var theURLs = [];
+function loadURLs()
+{
+theURLs.push({name:'Keywords: StudyTopic',url:'http://www.onelook.com/?w=*&loc=revfp2&clue=StudyTopic',details:''});
+theURLs.push({name:'Wikipedia',url:"http://en.wikipedia.org/wiki/StudyTopic",details:''});	
+theURLs.push({name:'Yahoo',url:'https://search.yahoo.com/search?n=100&p=%22StudyTopic%22',details:''});
+theURLs.push({name:'Flickr:',url:'https://www.flickr.com/search/?q=StudyTopic',details:''});
+theURLs.push({name:'Google News:',url:'https://www.google.com/?gws_rd=ssl#newwindow=1&tbm=nws&q=%22StudyTopic%22',details:''});
+theURLs.push({name:'Pinterest:',url:'http://www.pinterest.com/search/pins/?q=StudyTopic',details:''});
+theURLs.push({name:'Reddit:',url:'http://www.reddit.com/search?q=%22StudyTopic%22',details:''});
+theURLs.push({name:'Twitter:',url:'https://twitter.com/search?q=StudyTopic',details:''});
+theURLs.push({name:'Youtube:',url:'https://www.youtube.com/results?search_query=%22StudyTopic%22',details:''});
+theURLs.push({name:'WikiDictionary:',url:'http://en.wiktionary.org/wiki/StudyTopic',details:''});
+theURLs.push({name:'Google: lesson plan',url:'https://www.google.com/webhp?#q=%7EStudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx',details:''});
+theURLs.push({name:'Google: worksheet',url:'https://www.google.com/webhp?#q=%7E%22StudyTopic%22+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx',details:''});
+theURLs.push({name:'Download: lesson plan',url:'https://www.google.com/webhp?#q=%22StudyTopic%22+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I',details:''});
+theURLs.push({name:'Download: worksheet',url:'https://www.google.com/webhp?#q=StudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I',details:''});
+theURLs.push({name:'Sharemylesson',url:'http://www.sharemylesson.com/TaxonomySearchResults.aspx?area=resources&keywords=StudyTopic',details:''});
+theURLs.push({name:'Bing: lesson plan',url:'https://www.bing.com/search?q=%22StudyTopic%22+%22lesson+plan%22+filetype%3Apdf+%7C+filetype%3Adoc+%7C+filetype%3Adocx+%7C+filetype%3Appt++%7C+filetype%3Apptx++&go=Submit&qs=n&form=QBRE&pq=%22reading%22+%22lesson+plan%22+filetype%3Apdf+%7C+filetype%3Adoc+%7C+filetype%3Adocx+%7C+filetype%3Appt+%7C+filetype%3Apptx',details:''});
+theURLs.push({name:'Yandex: lesson plan',url:'https://www.yandex.com/yandsearch?text=%22StudyTopic%22%22lesson%20plan%22%20&lr=87&lang=en&mime=pdf&mime=rtf&mime=doc&mime=ppt&mime=docx&mime=pptx&mime=odt&mime=odp&csg=0%2C447%2C29%2C1%2C0%2C0%2C0',details:''});	
+}
+loadURLs();
+
+
+function addURLsToPlan()
+{	
+	var theFinal="";
+//	i=0;
+for(i in theURLs) {
+var part1 ='<a href="';
+var part2 =theURLs[i].url;
+var part3= '" contenteditable="true" title="';
+var part4= theURLs[i].name;
+var part5='" class="exlink" target="_blank">';
+var part6=theURLs[i].name +" "+theURLs[i].url;
+var part7= '</a><br>';
+var collect= part1+part2+part3+part4+part5+part6+part7;
+//alert(theFinal);
+theFinal=theFinal+collect;
+		}
+		//alert('hi');
+		document.getElementById('idSpanTheURLs').innerHTML = theFinal;
+}
+
+
+
+var replace = {
+replaceWordST: function (theArray,valueToReplace,valueNew) {
+	if(valueNew ==="")
+	{return;}
+jsonData = theArray;
+for (var obj in jsonData) {
+    if (jsonData.hasOwnProperty(obj)) {
+        for (var prop in jsonData[obj]) {
+            if (jsonData[obj].hasOwnProperty(prop)) {
+                jsonData[obj][prop] = replace.name(jsonData[obj][prop], valueToReplace, valueNew);
+            }
+        }
+    }
+}
+return jsonData;
+},
+name: function (name, valueToReplace, valueNew) {
+return name.replace(valueToReplace, valueNew);
+}
+}
+
+
+
+function openURLs()
+{
+	replace.replaceWordST(theURLs,/StudyTopic/g,input);
+for(i=0;i<theURLs.length;i++){
+	window.open(theURLs[i].url);
+}
+//window.open(theURLs[1].url);
+}
+
+
+
+function funcInsert(theTitle,theDetails)
+{
+	alert(theTitle+theDetails);
+var one=	document.getElementById("oneone").innerHTML;
+document.getElementById("oneone").innerHTML = one+"<br>okay, now we talk";
+}
+</script>
+
+
+<div id="objectives" style="display:none;" class="vqhelp"  >
+	<button id="idButtonIframe" class="vqplan" type="button" title="Resources" style="float:right;" onClick="openURLs()" ><i class="fa fa-th"></i> Resources&nbsp;&nbsp;</button>
+	
+	
+<br><br><br>
+
+
+<h5 >Objective:</h5>
+<div class="styleorange">
+
+<span id="oneone">ok</span><br>
+
+<button id="idButtonChooseLessonIdea" class="classLessonIdea" type="button" title="Resources" style="float:left;margin: 0;border: 0;padding: 0;font-size:1em;"  > Resources&nbsp;&nbsp;</button><br><br>
+<h6 id="Analyze" title="To be able to critically analyze and evaluate information about StudyTopic. Identifying the pros and the cons. " onclick="funcInsert(this.id,this.title);" style="font-weight:normal;" ><i class="fa fa-plus-square">&nbsp;</i>Analyze</h6>
+<h6 id="s3" title="To be able to appraise 2 arguments for and 2 arguments against StudyTopic. "><input type="checkbox" class="cb" id="r3" name="1Objective" value="s3"/><label id="ls3" for="r3" >Appraise</label></h6>
+<h6 id="s4" title="To be able to appreciate the importance of StudyTopic in terms of academia and to society as a whole. "><input type="checkbox" class="cb" id="r4" name="1Objective" value="s4"/><label id="ls4" for="r4" >Appreciate</label></h6>
+<h6 id="s5" title="To be able to argue for and against StudyTopic. "><input type="checkbox" class="cb" id="r5" name="1Objective" value="s5"/><label id="ls5" for="r5" >Argue</label></h6>
+<h6 id="s6" title="To be able to assemble the parts of StudyTopic into an effective whole. "><input type="checkbox" class="cb" id="r6" name="1Objective" value="s6"/><label id="ls6" for="r6" >Assemble</label></h6>
+<h6 id="s7" title="To be able to attribute the causes and effects of StudyTopic in different situations. "><input type="checkbox" class="cb" id="r7" name="1Objective" value="s7"/><label id="ls7" for="r7" >Attribute</label></h6>
+<h6 id="s8" title="To be able to communicate information about StudyTopic through presentation and discussion. "><input type="checkbox" class="cb" id="r8" name="1Objective" value="s8"/><label id="ls8" for="r8" >Communicate</label></h6>
+<h6 id="s9" title="To be able to compare and contrast thoughts about StudyTopic. "><input type="checkbox" class="cb" id="r9" name="1Objective" value="s9"/><label id="ls9" for="r9" >Compare</label></h6>
+<h6 id="s10" title="To be able to construct an argument in favor and against StudyTopic. "><input type="checkbox" class="cb" id="r10" name="1Objective" value="s10"/><label id="ls10" for="r10" >Construct</label></h6>
+<h6 id="s11" title="To be able to create StudyTopic. "><input type="checkbox" class="cb" id="r11" name="1Objective" value="s11"/><label id="ls11" for="r11" >Create</label></h6>
+<h6 id="s12" title="To be able to think critically about StudyTopic. "><input type="checkbox" class="cb" id="r12" name="1Objective" value="s12"/><label id="ls12" for="r12" >Criticize</label></h6>
+<h6 id="s13" title="To be able to make a decision about StudyTopic from the perspectives of: An Individual, A Family, Society, The Environment. "><input type="checkbox" class="cb" id="r13" name="1Objective" value="s13"/><label id="ls13" for="r13" >Decision</label></h6>
+<h6 id="s14" title="To be able to deconstruct the parts of StudyTopic. "><input type="checkbox" class="cb" id="r14" name="1Objective" value="s14"/><label id="ls14" for="r14" >Deconstruct</label></h6>
+<h6 id="s15" title="To be able to name the parts of StudyTopic and to describe what they look like. "><input type="checkbox" class="cb" id="r15" name="1Objective" value="s15"/><label id="ls15" for="r15" >Describe</label></h6>
+<h6 id="s16" title="To be able to produce a detailed StudyTopic design. "><input type="checkbox" class="cb" id="r16" name="1Objective" value="s16"/><label id="ls16" for="r16" >Design</label></h6>
+<h6 id="s17" title="To be able to develop an improved StudyTopic. "><input type="checkbox" class="cb" id="r17" name="1Objective" value="s17"/><label id="ls17" for="r17" >Develop</label></h6>
+<h6 id="s18" title="To be able to devise a new kind of StudyTopic. "><input type="checkbox" class="cb" id="r18" name="1Objective" value="s18"/><label id="ls18" for="r18" >Devise</label></h6>
+<h6 id="s19" title="To be able to distinguish between the different varieties of StudyTopic. "><input type="checkbox" class="cb" id="r19" name="1Objective" value="s19"/><label id="ls19" for="r19" >Distinguish</label></h6>
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+<br>ok
+
+
+
+</div>
+
+</div>
+</div><!-- end-->
+
+
+
+
+
+<div id="starters" style="display:none;" class="vqhelp" >
+<h5>Starter:</h5> 
+<div class="styleyellow" >
+<h6 id="s20" title="When I call your name I want you to give me ten words related to StudyTopic. Call the names of ten students. What do we think the relationship is between these words? "><input type="checkbox" class="cb" id="r20" name="2Starter" value="s20"/><label id="ls20" for="r20" >10 Words</label></h6>
+<h6 id="s21" title="Thinking about StudyTopic, write down a word that is related, it could be a person, place or idea. [Randomly select a student by throwing a soft teddy bear, the nearest student to where it lands or the catcher stands up.] As a class we have 20 yes /no questions to discover who or what has been written down. Repeat x10 [10 mins]. "><input type="checkbox" class="cb" id="r21" name="2Starter" value="s21"/><label id="ls21" for="r21" >20 Questions</label></h6>
+<h6 id="s22" title="Groups of 2. Look at the 5 pictures which show the 5 key ideas in StudyTopic. For each picture come up with 3 sentences that summarize your thoughts about StudyTopic [10 mins]. "><input type="checkbox" class="cb" id="r22" name="2Starter" value="s22"/><label id="ls22" for="r22" >5 Pictures</label></h6>
+<h6 id="s23" title="Draw an octagon with 'StudyTopic' in the middle and on each face write the words: Numbers, People, Words, Feelings, Nature, Actions, Sounds and Sights. For each of the faces of StudyTopic write: Numbers, How many StudyTopic... Words, Where does the word(s) StudyTopic come from... People, Who... Feelings, What emotions... Nature, How does the environment affect... Actions, What do people do... Sounds, What songs have been written about StudyTopic... Sights, What images represent StudyTopic... [10 mins] "><input type="checkbox" class="cb" id="r23" name="2Starter" value="s23"/><label id="ls23" for="r23" >8 Questions</label></h6>
+<h6 id="s24" title="How many letters are there in the alphabet?(26) Your task is to write down a word related to StudyTopic for each of those letters. If you can not think of one for a letter then go to the next one. You have 8 minutes, that is 18 seconds per letter. Go! [8 mins] Which 2 learners have written down the largest number of words? Read out your words [2 mins]. "><input type="checkbox" class="cb" id="r24" name="2Starter" value="s24"/><label id="ls24" for="r24" >A-Z</label></h6>
+<h6 id="s25" title="Look at the StudyTopic Poem, Piece of Art, Sculpture, Picture or Prop. What themes do you think are involved in StudyTopic? You have 1 minute to think about your answers, then I am going to randomly select someone to share their thoughts. Class discussion. [10 minutes. Learners think /empathize about StudyTopic] "><input type="checkbox" class="cb" id="r25" name="2Starter" value="s25"/><label id="ls25" for="r25" >Art And Life</label></h6>
+<h6 id="s26" title="Look at this StudyTopic picture. You have 3 minutes to write a three sentence caption that summarizes what is going on. Go! [3 mins] What words might be better ones to use? Which ones could you replace to make your sentence sound better? [1 minute] Find 3 people to share your sentences with. [2 mins] If you were going to add a fourth sentence what would it be? [1 minute] Repeat for a second caption. [14 mins]. "><input type="checkbox" class="cb" id="r26" name="2Starter" value="s26"/><label id="ls26" for="r26" >Caption</label></h6>
+<h6 id="s27" title="We are going to celebrate the work that we have done up to this point (completed once termly). As learners it is very important that we work effectively together. We are going to vote for 'The Most Helpful Student' [Students Vote, 2 students count up the votes]. We are now going to have certificates for: 'Hardest Worker', 'Most Positive Influencer' and 'Biggest Improver' [Talk through and show exemplary pieces of work. Show learners just how much progress we have made. Set aspirational targets. 10 mins]"><input type="checkbox" class="cb" id="r27" name="2Starter" value="s27"/><label id="ls27" for="r27" >Celebration</label></h6>
+<h6 id="s28" title="Groups of 2. Look through the list of 10 StudyTopic words on the board. Your task is to classify these according to their importance. Put the most important at the top and the least important at the bottom. For each word write a sentence justifying why you think it is more important than the word below it [6 mins]. Now we'll discuss where you have put your words and why you have put them in the position they are  in. What reason can you give for putting it there? Can you think of any other reasons? [4 mins]. "><input type="checkbox" class="cb" id="r28" name="2Starter" value="s28"/><label id="ls28" for="r28" >Classifying</label></h6>
+<h6 id="s29" title="Groups of 2. On the board is a list of 10 words related to StudyTopic. Your job is to turn these into a 'map' of connected words. You need to be able to explain and justify each connection that you make [model an example spider diagram]. [5 mins] "><input type="checkbox" class="cb" id="r29" name="2Starter" value="s29"/><label id="ls29" for="r29" >Concept Map</label></h6>
+<h6 id="s30" title="Your first task is to read through the last piece of work that we did and read the comments that have been written [2 mins]. Your second task is correct and improve the work: Add in more detail, correct any spelling mistakes, carry out the extension question. Ask yourself: Have I fully answered the question as best as I can? What would make this a better piece of work? What can I add to really show that I understand what we have learnt? [5 mins] Read through the criteria which will be used to mark your work: Neatness of Writing 20%, Correct Spelling 20%, Well Written Answer 30%, Comprehensive Answer 30%. What do you think should be your mark for you work? Write down your percentage for each of the criteria [2 mins]. "><input type="checkbox" class="cb" id="r30" name="2Starter" value="s30"/><label id="ls30" for="r30" >Corrections</label></h6>
+<h6 id="s31" title="Groups of 4. Your task is come up with two different 1 minute plays in which a person dies because of StudyTopic. In 10 minutes time we will watch one of your plays [10 mins]. We will randomly choose 3 of the groups to perform their plays [10 mins]."><input type="checkbox" class="cb" id="r31" name="2Starter" value="s31"/><label id="ls31" for="r31" >Death By ..</label></h6>
+<h6 id="s32" title="Groups of 2, spend 1 minute discussing each of these questions: How do you define StudyTopic? What does StudyTopic include? What doesn't StudyTopic include? Can you explain StudyTopic in another way? What illustration can you draw of StudyTopic? What specific StudyTopic examples can you think of? How many different examples of StudyTopic can you think of? Thinking of the different examples what are the different categories? "><input type="checkbox" class="cb" id="r32" name="2Starter" value="s32"/><label id="ls32" for="r32" >Defining </label></h6>
+<h6 id="s33" title="Groups of 2 (AB). Sit yourselves back to back [1 min]. A’s get yourself a pad of paper and a pencil. B’s come and collect yourself a handout (a StudyTopic drawing, picture, map, flow-chart or diagram). B’s you have 2 minutes to describe the drawing to your partner, who is going to try their best to re-create the drawing from your description [2 mins]. Let’s look at the key features of the handout which I have project onto the board for everyone to see [2 mins]. We are going to repeat and this time we are going to swap roles. B’s get your paper and pencils ready. A’s bring up the old handout when you come to collect your new StudyTopic handout [2 mins]. Let’s look at the key features of the second handout which I have project onto the board for everyone to see [2 mins]."><input type="checkbox" class="cb" id="r33" name="2Starter" value="s33"/><label id="ls33" for="r33" >Descriptive Drawing</label></h6>
+<h6 id="s34" title="[Stick an envelop containing a paragraph introducing StudyTopic underneath one desk.] Have a look underneath your desks, someone has got a passage to read out. [Passage:]Today we will be learning about StudyTopic. StudyTopic has 5 main parts they are [insert detail]. Quick quiz, write down the main parts you heard about StudyTopic. Before we do that we'll hear the introduction one more time [student re-reads]. Write down as much as you can remember [5 mins]. "><input type="checkbox" class="cb" id="r34" name="2Starter" value="s34"/><label id="ls34" for="r34" >Desk Search</label></h6>
+<h6 id="s35" title="Give groups a resource which they examine. The inspection leads to a series of questions they want answered. The whole class comes together to try and answer each others' questions "><input type="checkbox" class="cb" id="r35" name="2Starter" value="s35"/><label id="ls35" for="r35" >Detectives</label></h6>
+<h6 id="s36" title="I want to invite you to change your shoes... 'If Brad Pitt was put in charge of StudyTopic what would change?' 'If Hilary Clinton was doing your StudyTopic, what would she focus on?' "><input type="checkbox" class="cb" id="r36" name="2Starter" value="s36"/><label id="ls36" for="r36" >Different Shoes</label></h6>
+<h6 id="s37" title="Give groups a resource which they examine. The inspection leads to a series of questions they want answered. The whole class comes together to try and answer each others' questions "><input type="checkbox" class="cb" id="r37" name="2Starter" value="s37"/><label id="ls37" for="r37" >Detectives</label></h6>
+<h6 id="s38" title="I want to invite you to change your shoes... 'If Brad Pitt was put in charge of StudyTopic what would change?' 'If Hilary Clinton was doing your StudyTopic, what would she focus on?' "><input type="checkbox" class="cb" id="r38" name="2Starter" value="s38"/><label id="ls38" for="r38" >Different Shoes</label></h6>
+<h6 id="s39" title="[Write StudyTopic on the board] Have you ever heard of 'StudyTopic'? What do you think StudyTopic is? [Ask questions and then elicit responses from randomly selected students. 5 mins] What do you think? Can you expand? Why is StudyTopic like that? Why do think that? Where else do we find StudyTopic? When was the first time that you heard about StudyTopic? [General discussion about the different aspects of StudyTopic. 10 mins] "><input type="checkbox" class="cb" id="r39" name="2Starter" value="s39"/><label id="ls39" for="r39" >Discussion</label></h6>
+<h6 id="s40" title="Have a read through this newspaper article about StudyTopic. Your task is to highlight anything you think is a fact in green and anything that you think is an opinion in orange. "><input type="checkbox" class="cb" id="r40" name="2Starter" value="s40"/><label id="ls40" for="r40" >Fact Or Opinion?</label></h6>
+<h6 id="s41" title="Liven up definitions of key words by printing them off and sticking them up round the room for students to find and copy down. Print the definition in a large font and the key word underneath in a tiny font so that students move around. Put the key words on the board so students know how many to get. "><input type="checkbox" class="cb" id="r41" name="2Starter" value="s41"/><label id="ls41" for="r41" >Find The Definition</label></h6>
+
+
+
+</div>	
+</div><!-- end-->
+
+
+
+
+
+<div id="activities" style="display:none;" class="vqhelp" >
+<h5>Activity 1:</h5>
+<div class="stylegreen" >
+
+<h6 id="s42" title="Groups of 3. Your task is to create and then act out a StudyTopic comedy scene. Choose 5 StudyTopic words to include in your scene [10 mins]. Act out each of the scenes [10 mins]. "><input type="checkbox" class="cb" id="r42" name="3Activity" value="s42"/><label id="ls42" for="r42" >Act Out (Comedy)</label></h6>
+<h6 id="s43" title="You are going to act out a scene. The scene can be anywhere you want: A Living Room, A Restaurant or A Shop. In the scene you must include 5 StudyTopic words from today's lesson. Your have 10 minutes to prepare [10 mins]. Performances [10 mins]. Make a second scene that, contains comedy or is serious [5 mins]. Performances [5 mins]. "><input type="checkbox" class="cb" id="r43" name="3Activity" value="s43"/><label id="ls43" for="r43" >Act Out (Scene)</label></h6>
+<h6 id="s44" title="Your task is to choose to prepare either a Role-Play, A News Report, an Advert or a Radio Interview. Your objective is to creatively demonstrate your knowledge of StudyTopic. You have 15 minutes to prepare and practice your script [15 mins]. Join together with another group and perform your role play. Each person in the other group will give an example of one thing they think is good and one thing they think could be improved, and how [model for students]. Groups perform and feedback to each other [5 minutes]. The best work is selected and shown to the class [10 mins]. Write down 3 things for What Went Well (WWW) and 3 things for Even Better If (EBI) [5 mins]. "><input type="checkbox" class="cb" id="r44" name="3Activity" value="s44"/><label id="ls44" for="r44" >Acting</label></h6>
+<h6 id="s45" title="Make reading active to encourage students to engage with the text. Turn to page 100 and read through individually [2 mins]. Read through as a class, stopping to ask questions e.g. 'What does that mean? Why was it phrased like that? Where else might you find that? (randomly choose students to answer) [5 mins]. Your task is to write a heading for each paragraph we have read. Then you are going to turn the heading into a one-sentence summary of the paragraph (model desired result) [10 mins]. "><input type="checkbox" class="cb" id="r45" name="3Activity" value="s45"/><label id="ls45" for="r45" >Active Reading</label></h6>
+<h6 id="s46" title="Read the StudyTopic article [4 mins]. What are the underlying assumptions in the StudyTopic article? Go through and highlight the assumptions [Model the first one for students. 4 mins]. Are they fair assumptions to make about StudyTopic? Why or why not? Justify your answer. [10 mins] We'll now share our thoughts about the article. We are going to randomly select someone to read their writing and then ask another student if they agree or disagree and why x3 [8 mins]. "><input type="checkbox" class="cb" id="r46" name="3Activity" value="s46"/><label id="ls46" for="r46" >Article Analysis</label></h6>
+<h6 id="s47" title="What are the benefits and the drawbacks of StudyTopic? Consider the impact of StudyTopic on the country as a whole and on the local area. You must write a minimum of 400 words and cite at least 2 sources [15 mins]."><input type="checkbox" class="cb" id="r47" name="3Activity" value="s47"/><label id="ls47" for="r47" >Benefits/ Drawbacks</label></h6>
+<h6 id="s48" title="Garden Gate, Sexy Kate, One fat lady!' What am I talking about? They are all bingo words for the number 8. To start today's lesson I want you to draw a 3x3 square bingo grid [2 vertical and 2 horizontal lines creates 9 squares]. Into each square choose one of the 15 StudyTopic words that are on the board [model for learners. 2 mins]. I am going to read out a definition of one of the words. If you recognize that it is the definition of a word you have written down, then cross it off. If you cross off 3 in a line shout '3 in line'. If you cross off all of the grid stand up and say 'BINGO!' [10 mins]. For each of the 15 StudyTopic words write your own definition. Groups of 4. Each person in the group is now going to host 1 round of bingo using your word definitions. [15 mins] "><input type="checkbox" class="cb" id="r48" name="3Activity" value="s48"/><label id="ls48" for="r48" >Bingo</label></h6>
+<h6 id="s49" title="Your task is to create a cartoon strip and illustrate one of the StudyTopic concepts we have covered. Your cartoon strip must have at least 5 pictures and each picture must have one dialogue bubble containing at least one StudyTopic word [15 mins]. "><input type="checkbox" class="cb" id="r49" name="3Activity" value="s49"/><label id="ls49" for="r49" >Cartoon Strip</label></h6>
+<h6 id="s50" title="Groups of 2. Think about what it was like to be 4 years younger than you are. What were the things you knew? What were the things you didn't know? [2 mins]. Individually. Your task is to create 'A Children's Book Of StudyTopic' to help to explain StudyTopic to someone 4 years younger than yourself. The book needs to include problems and answers with workings, as well as picture illustrations. "><input type="checkbox" class="cb" id="r50" name="3Activity" value="s50"/><label id="ls50" for="r50" >Children's Book</label></h6>
+<h6 id="s51" title="You are going to pick a point in history and compare life before StudyTopic with life after StudyTopic. Think about the concept /idea /invention /discovery. Document your thoughts in an essay. "><input type="checkbox" class="cb" id="r51" name="3Activity" value="s51"/><label id="ls51" for="r51" >Comparison</label></h6>
+<h6 id="s52" title="Groups of 2. You are going to create a company that exploits StudyTopic. Your task is to create a brief that explains what your company does and how it makes money. You will present your ideas at the end of the class. "><input type="checkbox" class="cb" id="r52" name="3Activity" value="s52"/><label id="ls52" for="r52" >Create A Company</label></h6>
+<h6 id="s53" title="These are 8 StudyTopic words that we are going to be using in today's lesson. Your first task is to think up a clue for each word. For instance if the word was coal you might say: 4 letters. It is black, found in the ground and burnt as fuel. You need to think up a clue for each of the 8 StudyTopic words [10 mins]. Your second task is to join up your words just like a cross word. Then put a number next to each word. You have created a crossword answer grid. You can draw over the top to create the crossword question grid [5 mins]. Get together with another student and swap crossword puzzles [5 mins]. Extension: Add additional words to crossword. "><input type="checkbox" class="cb" id="r53" name="3Activity" value="s53"/><label id="ls53" for="r53" >Crossword Puzzle</label></h6>
+<h6 id="s54" title="Class in 2 teams. Today we are going to conduct a debate about StudyTopic. This side of the room are going to argue for StudyTopic. This side of the room are going to argue against StudyTopic. You have 5 minutes to prepare your arguments using these 2 textbooks and 2 information sheets [5 mins]. Debate [10 mins]. "><input type="checkbox" class="cb" id="r54" name="3Activity" value="s54"/><label id="ls54" for="r54" >Debate</label></h6>
+<h6 id="s55" title="Groups of 2 (AB). A's, you are going to argue in favor of StudyTopic. B's, you are going to argue against StudyTopic. The one rule is that this is a 'Silent Debate'. That means you are only allowed to communicate by writing your ideas onto the shared piece of paper. When your opponent writes an argument try to write your own counter argument [5 mins]. Swap partners and carry on [5 mins]. Swap partners and carry on [5 mins]. "><input type="checkbox" class="cb" id="r55" name="3Activity" value="s55"/><label id="ls55" for="r55" >Debate (Silent)</label></h6>
+<h6 id="s56" title="Students create descriptions of all of the major ideas/ concepts /characters in/of StudyTopic. "><input type="checkbox" class="cb" id="r56" name="3Activity" value="s56"/><label id="ls56" for="r56" >Descriptions</label></h6>
+<h6 id="s57" title="Discussion: What image summarizes StudyTopic for you, explain your answer? [2 mins]. Your task is to design an MP3 Image, eBook Cover, or e-magazine cover about StudyTopic [15 mins]. Write a paragraph that explains the different image elements you have drawn. What does each aspect represent? How is each part of your drawing connected to StudyTopic? [5 mins]. Students look at each others work and explain their thinking [5 mins]. "><input type="checkbox" class="cb" id="r57" name="3Activity" value="s57"/><label id="ls57" for="r57" >Design A Cover</label></h6>
+<h6 id="s58" title="Individually. Your task is to design and make a board game that uses StudyTopic concepts and keywords. You might have that each time a player answers a question they can move their game piece. You can really use your imagination, you have 20 minutes to make your games [20 minute]. Groups of 4. Choose one of your group's games and play it [5 mins]. [Continue with the other games at the start of the next lesson]. "><input type="checkbox" class="cb" id="r58" name="3Activity" value="s58"/><label id="ls58" for="r58" >Design A Game</label></h6>
+<h6 id="s59" title="What do you think makes for a good advertisement? What is an example of a good billboard advert? Discussion [3 mins]. Your assignment is to design an advertisement that promotes StudyTopic. Think about the qualities of StudyTopic that you can include. Your advert needs to have a description, a price and a slogan. You have 20 minutes [20 mins]. Layout your work around the classroom and take one sticky note. Write your name on the sticky note. You are going to choose one of the pieces of work and write on the sticky note one thing that is good about the work and one thing that could be improved [5 mins]. "><input type="checkbox" class="cb" id="r59" name="3Activity" value="s59"/><label id="ls59" for="r59" >Design An Advert</label></h6>
+<h6 id="s60" title="Individually. You are going to make a/an StudyTopic classroom display poster that will replace the old work on this display board. Your StudyTopic poster must have: correct spelling, be at least A4 size, have at least 2 sentences and a picture. You have 20 minutes [20 mins]. "><input type="checkbox" class="cb" id="r60" name="3Activity" value="s60"/><label id="ls60" for="r60" >Display Board</label></h6>
+<h6 id="s61" title="Your task is to create a drawing/ painting/ illustration that shows StudyTopic. Put StudyTopic into an interesting setting. How can you display StudyTopic so that you can show all of its different aspects? "><input type="checkbox" class="cb" id="r61" name="3Activity" value="s61"/><label id="ls61" for="r61" >Drawing</label></h6>
+
+
+
+
+</div>	
+</div><!-- end-->
+
+
+
+<div id="plenaries" style="display:none;" class="vqhelp" >
+<h5>Plenary:</h5> 
+<div class="styleblue" >
+
+
+
+
+
+<h6 id="s62" title="Your first task is to summarize the StudyTopic lesson in 5 sentences. Once you have finished your 5 sentences go and stand next to someone who is still writing and help them to finish [5 mins]. Go back to your seats. Your second task is to reduce your 5 sentences to the 5 most important StudyTopic words. When you have written down your words discuss with the person next to you why you have chosen those 5 words [3 mins]. Your final task is to summarize your 5 words to a single word. When you have chosen your word, explain to the person next to you why you have chosen it [3 mins]. Extension: Repeat, this time using shapes and pictures [10 mins]. "><input type="checkbox" class="cb" id="r62" name="4Plenary" value="s62"/><label id="ls62" for="r62" >5 Sentences, 5 Words, 1</label></h6>
+<h6 id="s63" title="Groups of 2. On this plain sheet of paper draw a grid with 8 squares [1 min]. In each square answer one of the following questions. Numbers: How many types of StudyTopic are there? Words: Where does the word StudyTopic come from? People: Who discovered StudyTopic? Feelings: What emotions does StudyTopic have? Nature: How does StudyTopic affect the environment? Actions: What are all the things people do with StudyTopic? Sounds: What songs (or noises) have been influenced by StudyTopic? Sights: What images represent StudyTopic? [15 mins]."><input type="checkbox" class="cb" id="r63" name="4Plenary" value="s63"/><label id="ls63" for="r63" >8 Way Thinking</label></h6>
+<h6 id="s64" title="Your task is to unravel the anagrams to reveal the (StudyTopic) key words /phrases /ideas from the lesson [5 mins]. Now what you are going to do is to come up with your own 'mana rags' [5 mins]. "><input type="checkbox" class="cb" id="r64" name="4Plenary" value="s64"/><label id="ls64" for="r64" >Anagrams</label></h6>
+<h6 id="s65" title="Summarize what you have learnt about StudyTopic in the character of an animal. Explain what StudyTopic means to your animal [10 mins]. You are going to share what you have learnt and the class are going to guess which animal you chose [5 mins]. "><input type="checkbox" class="cb" id="r65" name="4Plenary" value="s65"/><label id="ls65" for="r65" >Animal Magic</label></h6>
+<h6 id="s66" title="Draw the most important thing you have learnt today [5 mins]. Stand in 2 lines facing each other and explain your drawing [2 mins]. One line then moves along and the 'pairings' change, repeat x3 [5 mins]. "><input type="checkbox" class="cb" id="r66" name="4Plenary" value="s66"/><label id="ls66" for="r66" >Art Schmart</label></h6>
+<h6 id="s67" title="Groups of 3 [Number students 1,2 and 3. Place 3 StudyTopic statements (numbered 1,2 and 3) on the board]. Look at your statement on the board, your task is to explain to the rest of the group what your statement means [5 mins]. "><input type="checkbox" class="cb" id="r67" name="4Plenary" value="s67"/><label id="ls67" for="r67" >As Easy As 1 2 3</label></h6>
+<h6 id="s68" title="Your task is to try and beat the teacher! Come up with questions based around your learning today and see if the teacher can answer your StudyTopic questions. On two scraps of paper write down 2 questions and place them into the bag [4 mins]. One student is the quiz master and sits opposite the teacher at the front of the class and pulls out 2 questions to ask. They then select the next quiz master. Repeat x5 [10 mins]. "><input type="checkbox" class="cb" id="r68" name="4Plenary" value="s68"/><label id="ls68" for="r68" >Beat The Teacher</label></h6>
+<h6 id="s69" title="I am going to spin a bottle in the center of the class. The person that the bottle points to has to complete one of the following sentences: 'I would like to tell you about StudyTopic... I would like to explain why StudyTopic... Today I have learnt... One important thing to remember about StudyTopic is... The key focus today was... and this means... The best bit of StudyTopic is... because...' "><input type="checkbox" class="cb" id="r69" name="4Plenary" value="s69"/><label id="ls69" for="r69" >Bottle Sentences</label></h6>
+<h6 id="s70" title="Make a brainstorm that shows what you have learnt about StudyTopic. Around the core word StudyTopic you need to write 5 outer core words. Each of those then need to have 5 words around them.[10 mins] You now have 3 minutes to walk around and have look at the work that everyone else has done. As you walk around think of some words that you could add to your brainstorm. When I clap 3 times come back to your work and add those words. "><input type="checkbox" class="cb" id="r70" name="4Plenary" value="s70"/><label id="ls70" for="r70" >Brainstorm</label></h6>
+<h6 id="s71" title="If Sean Connery were to summarize StudyTopic, what would he say? [give an example with an accent] Your task is to summarize StudyTopic in the voice of your favorite celebrity. You have 5 minutes to write out what you would say and practice. Then we'll perform for the class. "><input type="checkbox" class="cb" id="r71" name="4Plenary" value="s71"/><label id="ls71" for="r71" >Celebrities</label></h6>
+<h6 id="s72" title="How could what you have learnt about StudyTopic change the world? Answer the following questions: On a local level? On a national level? On a global level? [5 mins]. "><input type="checkbox" class="cb" id="r72" name="4Plenary" value="s72"/><label id="ls72" for="r72" >Change The World</label></h6>
+<h6 id="s73" title="Act out a key word, concept, idea from the lesson. (teacher or students could do it, others guess) Challenge students by having the 'charade-doer' then questioning the class about their choice once it has been guessed; others explaining how they might have done it differently (makes mental concepts explicit); students doing it in small groups so everyone can have a turn. "><input type="checkbox" class="cb" id="r73" name="4Plenary" value="s73"/><label id="ls73" for="r73" >Charades</label></h6>
+<h6 id="s74" title="Groups of 2. On 6 small pieces of paper, each person is going to write down 6 different ideas about StudyTopic [3 mins]. We will put all of our ideas into the plastic bag. Each group now comes and takes one piece of paper. In your groups you mime (no talking allowed) the key learning/ ideas/ concepts whilst the other person guesses what it is. Then swap over and get a new piece of paper with a StudyTopic word [10 mins]. "><input type="checkbox" class="cb" id="r74" name="4Plenary" value="s74"/><label id="ls74" for="r74" >Charades 2</label></h6>
+<h6 id="s75" title="On a scrap of paper write down one sentence that summarizes your learning. Once you have written your sentence bring it to the desk at the front of the class. Arrange yourselves into lines of 6. The person at the end of the line comes and gets one of the sentences. The objective is to whisper the sentence from the end of the line to the front. [for each of the lines] What have we got at the front of the line? What did we have at the start? [change the line order and repeat 2 more times]. With your partner what do you think this tells you about communication, memory and listening? [2 minute discussion]. "><input type="checkbox" class="cb" id="r75" name="4Plenary" value="s75"/><label id="ls75" for="r75" >Chinese Whispers</label></h6>
+<h6 id="s76" title="Use circle time to Review, Reflect and Explore StudyTopic. Review what's been learnt, Reflect on feelings and Explore questions about StudyTopic [10 mins]. "><input type="checkbox" class="cb" id="r76" name="4Plenary" value="s76"/><label id="ls76" for="r76" >Circle Time</label></h6>
+<h6 id="s77" title="I want to invite you to look at the 3 StudyTopic texts. For each decide if they are: Fact/Opinion, Masculine/Feminine, Analytical/Emotional and Academic/Populist [10 mins]. Your challenge is to come up with you own classification systems (and a rationale behind it) [5 mins]. "><input type="checkbox" class="cb" id="r77" name="4Plenary" value="s77"/><label id="ls77" for="r77" >Classified Information</label></h6>
+<h6 id="s78" title="Groups of 2. The first thing I want you to do is swap the StudyTopic work that you have done today. [allow 30 seconds for students to swap] Your job is to carefully read through your partners work and then write down three pieces of feedback. Your feedback will say how the StudyTopic work could be improved. Your feedback needs to: Use full sentences. Be complimentary. Be helpful. "><input type="checkbox" class="cb" id="r78" name="4Plenary" value="s78"/><label id="ls78" for="r78" >Classwork Peer Assessment</label></h6>
+<h6 id="s79" title="Produce a comic strip showing what you have learnt about StudyTopic. Challenge students by having a PowerPoint slide with specific speech bubbles they put in their strip (i.e. Wow! Proportional representation really is a potential alternative to first-past-the-post) "><input type="checkbox" class="cb" id="r79" name="4Plenary" value="s79"/><label id="ls79" for="r79" >Comic Strip</label></h6>
+<h6 id="s80" title="Groups of 2. Here are 15 words that are related to StudyTopic. Your task is to turn these into a concept map. Each word needs to be connected to at least one other word. For each connection that you make, you need to be able to justify why you have made that connection. In 10 minutes I'm going to give you a word and I'm going to ask you to stand up and justify the words you have connected it to. "><input type="checkbox" class="cb" id="r80" name="4Plenary" value="s80"/><label id="ls80" for="r80" >Concept Map</label></h6>
+<h6 id="s81" title="Where has conflict or tension arisen in today's lesson? There was tension between different interpretations of StudyTopic, why it that we think differently? Let's explore that in a discussion (relationships, learning) [5 mins]. "><input type="checkbox" class="cb" id="r81" name="4Plenary" value="s81"/><label id="ls81" for="r81" >Conflict</label></h6>
+
+
+
+
+
+</div>
+</div><!-- end-->
+
+
+
+
+<div id="homework" style="display:none;" class="vqhelp" >
+<h5>Homework:</h5> 
+<div class="styleindigo" >
+
+
+
+
+
+
+<h6 id="s82" title="Your task is to write a blog entry and post it. You can use any blogging website you want. In your blog you need to include 4 of the keywords we have studied in StudyTopic. Next week we might not have access to a computer room so I would like you to print off your work. "><input type="checkbox" class="cb" id="r82" name="5Homework" value="s82"/><label id="ls82" for="r82" >Blogging</label></h6>
+<h6 id="s83" title="Create a collage that represents the 4 most important aspects of StudyTopic. You should include a paragraph that describes what you have created and how it represents StudyTopic."><input type="checkbox" class="cb" id="r83" name="5Homework" value="s83"/><label id="ls83" for="r83" >Collage</label></h6>
+<h6 id="s84" title="Write a description of StudyTopic. What color is it? What does it smell like? What does it taste like? What does it sound like? What does it feel like? Where does it live? "><input type="checkbox" class="cb" id="r84" name="5Homework" value="s84"/><label id="ls84" for="r84" >Description</label></h6>
+<h6 id="s85" title="Write a scene from a film script about StudyTopic. Choose your genre (comedy, sci-fi, romance) and write two pages with dialogue and scene description."><input type="checkbox" class="cb" id="r85" name="5Homework" value="s85"/><label id="ls85" for="r85" >Film Script</label></h6>
+<h6 id="s86" title="I would like you to enhance your work from the lesson. You will need to use greater detail in describing each StudyTopic keyword. "><input type="checkbox" class="cb" id="r86" name="5Homework" value="s86"/><label id="ls86" for="r86" >Finish Off</label></h6>
+<h6 id="s87" title="Design a flyer to sell the idea of StudyTopic. We will peer assess your work at the start of next lesson. "><input type="checkbox" class="cb" id="r87" name="5Homework" value="s87"/><label id="ls87" for="r87" >Flyer</label></h6>
+<h6 id="s88" title="Create a game about StudyTopic. You should have questions cards and board spaces that are named after StudyTopic keywords. "><input type="checkbox" class="cb" id="r88" name="5Homework" value="s88"/><label id="ls88" for="r88" >Game</label></h6>
+<h6 id="s89" title="Produce an illustration showing an aspect of StudyTopic. Your illustration should include a paragraph describing what you've drawn and why it's important to StudyTopic."><input type="checkbox" class="cb" id="r89" name="5Homework" value="s89"/><label id="ls89" for="r89" >Illustration </label></h6>
+<h6 id="s90" title="Have an Instant Message conversation about StudyTopic. Your conversation should be 1 page long. Print off your conversation and add it into your book. "><input type="checkbox" class="cb" id="r90" name="5Homework" value="s90"/><label id="ls90" for="r90" >Instant Message</label></h6>
+<h6 id="s91" title="Create a 3D model that shows all the parts of StudyTopic. Put on labels explaining how the parts of StudyTopic work."><input type="checkbox" class="cb" id="r91" name="5Homework" value="s91"/><label id="ls91" for="r91" >Model</label></h6>
+<h6 id="s92" title="Find a news story about StudyTopic. Print it off and highlight the keywords that we have studied in class. "><input type="checkbox" class="cb" id="r92" name="5Homework" value="s92"/><label id="ls92" for="r92" >News Story</label></h6>
+<h6 id="s93" title="In preparation for next weeks lesson find out 3 facts about the topic we will be doing next lesson. "><input type="checkbox" class="cb" id="r93" name="5Homework" value="s93"/><label id="ls93" for="r93" >Next Week - 3 Facts</label></h6>
+<h6 id="s94" title="Over the next week you are going to keep a noting page. Each day you are going to make an entry and note down what you have seen that day which is connected to StudyTopic. "><input type="checkbox" class="cb" id="r94" name="5Homework" value="s94"/><label id="ls94" for="r94" >Noting Page</label></h6>
+<h6 id="s95" title="Your task is to use your mobile phones to bring in 3 pictures related to StudyTopic. If your phone doesn't have a camera you could bring in clippings from newspapers or magazines."><input type="checkbox" class="cb" id="r95" name="5Homework" value="s95"/><label id="ls95" for="r95" >Phone Photo</label></h6>
+<h6 id="s96" title="Record yourself reading a page about StudyTopic from the unit textbook. Bring in the recording on your phone. "><input type="checkbox" class="cb" id="r96" name="5Homework" value="s96"/><label id="ls96" for="r96" >Record</label></h6>
+<h6 id="s97" title="Choosing one of the two ideas covered in the lesson write a thirty second sales pitch to sell the idea. "><input type="checkbox" class="cb" id="r97" name="5Homework" value="s97"/><label id="ls97" for="r97" >Sales Pitch</label></h6>
+<h6 id="s98" title="Write a song about StudyTopic. You must have a chorus and two verses. You should try to include 5 of the keywords we have studied."><input type="checkbox" class="cb" id="r98" name="5Homework" value="s98"/><label id="ls98" for="r98" >Song</label></h6>
+<h6 id="s99" title="Create and then carry out a survey about StudyTopic. Your might like to carry out the survey with your parents/ guardians or your neighbors. Your StudyTopic survey should include 3 closed questions and 2 open questions. "><input type="checkbox" class="cb" id="r99" name="5Homework" value="s99"/><label id="ls99" for="r99" >Survey</label></h6>
+<h6 id="s100" title="Produce a timeline that shows StudyTopic. You timeline must include: 5 key dates and at least 2 sentences for each date and 2 pictures illustrating events that took place during your timeline. "><input type="checkbox" class="cb" id="r100" name="5Homework" value="s100"/><label id="ls100" for="r100" >Timeline</label></h6>
+<h6 id="s101" title="Produce a timeline which shows the development and changes of StudyTopic over the course of 50 years."><input type="checkbox" class="cb" id="r101" name="5Homework" value="s101"/><label id="ls101" for="r101" >Transcribed Interview</label></h6>
+
+
+
+
+</div>
+</div><!-- end-->
+
+
+
+
+<div id="resources" style="display:none;" class="vqhelp" >
+<h5>Resources:</h5> 
+<div class="styleviolet" >
+
+
+
+
+
+
+<h6 id="s102" title="Labels, Mini Whiteboards, Whiteboard Markers, Mini Whiteboard Erasers, Traffic Light Cards (Green, Orange, Red), Laminated ABCD Cards, "><input type="checkbox" class="cb" id="r102" name="6Resources" value="s102"/><label id="ls102" for="r102" >Assessment</label></h6>
+<h6 id="s103" title="A class set of: Video cameras, Digital Cameras, Memory Cards, Tapes, Batteries, Chargers, Connection Cables, "><input type="checkbox" class="cb" id="r103" name="6Resources" value="s103"/><label id="ls103" for="r103" >Audio Visual</label></h6>
+<h6 id="s104" title="Textbooks, Exercise Books, Dictionaries, "><input type="checkbox" class="cb" id="r104" name="6Resources" value="s104"/><label id="ls104" for="r104" >Books</label></h6>
+<h6 id="s105" title="Computer, Interactive Whiteboard, "><input type="checkbox" class="cb" id="r105" name="6Resources" value="s105"/><label id="ls105" for="r105" >Classroom Computer</label></h6>
+<h6 id="s106" title="Various Colored Paper, Magazines, Cardboard boxes, Materials, Cardboard, Glue, Scissors, Pencils, Glitter,  "><input type="checkbox" class="cb" id="r106" name="6Resources" value="s106"/><label id="ls106" for="r106" >Collage Materials</label></h6>
+<h6 id="s107" title="A class set of: Computers, Printers, Scanners, Data Loggers, "><input type="checkbox" class="cb" id="r107" name="6Resources" value="s107"/><label id="ls107" for="r107" >Computers</label></h6>
+<h6 id="s108" title="Paints, Pens, Pencils, Erasers, "><input type="checkbox" class="cb" id="r108" name="6Resources" value="s108"/><label id="ls108" for="r108" >Creativity</label></h6>
+<h6 id="s109" title="Pencils, Drawing Boards, Isometric Paper, "><input type="checkbox" class="cb" id="r109" name="6Resources" value="s109"/><label id="ls109" for="r109" >Designing Kit</label></h6>
+<h6 id="s110" title="Staplers, Display Stapler, Colored Backing Paper, Scissors, "><input type="checkbox" class="cb" id="r110" name="6Resources" value="s110"/><label id="ls110" for="r110" >Display Board Kit</label></h6>
+<h6 id="s111" title="Compasses, Protractors, Rulers, Pencils, Colored Pens, Colored Pencils, "><input type="checkbox" class="cb" id="r111" name="6Resources" value="s111"/><label id="ls111" for="r111" >Drawing</label></h6>
+<h6 id="s112" title="Graph Paper, Squared Paper, Pencils, Protractors, Erasers, Compasses, tracing paper, "><input type="checkbox" class="cb" id="r112" name="6Resources" value="s112"/><label id="ls112" for="r112" >Graphing</label></h6>
+<h6 id="s113" title="A class set of: Calculators, Graph Paper, Squared Paper, Scissors, tracing paper, timers, Data Loggers, Trundle Wheel, "><input type="checkbox" class="cb" id="r113" name="6Resources" value="s113"/><label id="ls113" for="r113" >Math</label></h6>
+<h6 id="s114" title="A class set of: Calculators, Abacuses, Plastic Money, Talk Balls, Dice, Dominoes, Plastic Cubes, Arithmetic Racks, Multisided Dice, Spinners, "><input type="checkbox" class="cb" id="r114" name="6Resources" value="s114"/><label id="ls114" for="r114" >Math Counting</label></h6>
+<h6 id="s115" title="A class set of: Large Dice, Paper Money, Coins, colored 3D shapes, graph paper, protractors, pens, giant dominoes, big number cards, large number grid, giant playing cards, "><input type="checkbox" class="cb" id="r115" name="6Resources" value="s115"/><label id="ls115" for="r115" >Math Equipment</label></h6>
+<h6 id="s116" title="Large pieces of colored chalk, "><input type="checkbox" class="cb" id="r116" name="6Resources" value="s116"/><label id="ls116" for="r116" >Outdoor Drawing</label></h6>
+<h6 id="s117" title="Tape Measures, Stop Watches, Thermometers, Meter Rulers, Clinometers, Pedometers, Trundle Wheels, Compasses, Note Books, Clipboards, "><input type="checkbox" class="cb" id="r117" name="6Resources" value="s117"/><label id="ls117" for="r117" >Outdoor Measuring </label></h6>
+<h6 id="s118" title="A4 and A3 colored paper, Paints, Pens, Pencils, Rubbers, Paint Pots, "><input type="checkbox" class="cb" id="r118" name="6Resources" value="s118"/><label id="ls118" for="r118" >Painting Kit</label></h6>
+<h6 id="s119" title="A4 Paper, A3 Paper, Envelopes, Sticky Notes, Scotch tape, Marker Pens, Colored Pens. "><input type="checkbox" class="cb" id="r119" name="6Resources" value="s119"/><label id="ls119" for="r119" >Poster Kit</label></h6>
+<h6 id="s120" title="Lined Paper, Plastic Sleeves, Folders, Labels, "><input type="checkbox" class="cb" id="r120" name="6Resources" value="s120"/><label id="ls120" for="r120" >Reports Kit</label></h6>
+<h6 id="s121" title="Biology Laboratory - A class set of: Choice Chambers, Agar Plates, Quadrats, "><input type="checkbox" class="cb" id="r121" name="6Resources" value="s121"/><label id="ls121" for="r121" >Science Biology</label></h6>
+
+
+</div>
+</div><!-- end-->
+
+
+
+<div id="reminders" style="display:none;"  class="vqhelp" >
+<h5>Reminder/ Additional Info:</h5> 
+<div class="styleuviolet">
+
+
+
+
+<h6 id="s122" title="How am I making today's lesson available for students that are absent? What can I do to get absent students fully participating in the next lesson? "><input type="checkbox" class="cb" id="r122" name="7Reminder" value="s122"/><label id="ls122" for="r122" >Absent Students</label></h6>
+<h6 id="s123" title="How could I use easy to understand terms to make StudyTopic concepts more accessible? What StudyTopic characters could I play and introduce? "><input type="checkbox" class="cb" id="r123" name="7Reminder" value="s123"/><label id="ls123" for="r123" >Accessibility</label></h6>
+<h6 id="s124" title="Ask the StudyTopic question first, and then say the student's name, forcing every single student to do the work of figuring out an answer. It can take many seconds (10-15) to retrieve the information from our memories and then produce a response. "><input type="checkbox" class="cb" id="r124" name="7Reminder" value="s124"/><label id="ls124" for="r124" >Ask then Wait</label></h6>
+<h6 id="s125" title="When I say 'Class' you are going to say 'Yes'. If I say 'Claaaas' you say 'Yeeees', if I say 'Classity Claass' you say? 'Yessity yees'. Now let's practice. 'Class' [class responds] we can do better 'Class!' [wait for response] 'Classity Claass' [wait for response]. Listen out for that because we'll be doing more of it throughout the lesson. "><input type="checkbox" class="cb" id="r125" name="7Reminder" value="s125"/><label id="ls125" for="r125" >Attention Getter - Claaaass!</label></h6>
+<h6 id="s126" title="To get everyone's attention at the end of a noisy task switch the lights off and on. "><input type="checkbox" class="cb" id="r126" name="7Reminder" value="s126"/><label id="ls126" for="r126" >Attention Getter - Lights</label></h6>
+<h6 id="s127" title="Hands Raised, Clapping with a rhythm that the class repeats, Bell, Shouting 'freeze', Finger in front of mouth, "><input type="checkbox" class="cb" id="r127" name="7Reminder" value="s127"/><label id="ls127" for="r127" >Attention Getter - Various</label></h6>
+<h6 id="s128" title="Periodically check understanding with thumbs up /down. Yes/No, +/- cards, 1,2,3,4 fingers. 'Hold up 4 fingers if you think the answer is D.' "><input type="checkbox" class="cb" id="r128" name="7Reminder" value="s128"/><label id="ls128" for="r128" >Check In</label></h6>
+<h6 id="s129" title="What cliffhanger will I include in this lesson to wet learners' appetite for the next class: A question, an interesting fact, a riddle, handout(s), a picture on the board or a brief discussion? Will I build suspense for the next lesson by leaving a question unanswered until the following class? "><input type="checkbox" class="cb" id="r129" name="7Reminder" value="s129"/><label id="ls129" for="r129" >Cliffhanger</label></h6>
+<h6 id="s130" title="How am I conveying the expectation of student co-operation? "><input type="checkbox" class="cb" id="r130" name="7Reminder" value="s130"/><label id="ls130" for="r130" >Co-operation</label></h6>
+<h6 id="s131" title="Use color folders to organize and file class information, making it easier to find. "><input type="checkbox" class="cb" id="r131" name="7Reminder" value="s131"/><label id="ls131" for="r131" >Color Folders</label></h6>
+<h6 id="s132" title="We need two volunteers. You are the equipment monitors. It is your job to count up how many pieces of equipment (Scissors, Rulers, etc.) we have and make sure that everything is working. At the end of the lesson before we go I would like you to count in all the lesson equipment and to check that everything is working. I will do a final double check. Looking after our resources is important because we need to use them for the whole year. "><input type="checkbox" class="cb" id="r132" name="7Reminder" value="s132"/><label id="ls132" for="r132" >Count Out And In</label></h6>
+<h6 id="s133" title="A picture is worth a thousand words. A demonstration is worth a thousand pictures. "><input type="checkbox" class="cb" id="r133" name="7Reminder" value="s133"/><label id="ls133" for="r133" >Demonstration</label></h6>
+<h6 id="s134" title="How am I making our learning environment supportive? How am I making our learning environment purposeful? How am I making our learning environment interactive? "><input type="checkbox" class="cb" id="r134" name="7Reminder" value="s134"/><label id="ls134" for="r134" >Development Questions</label></h6>
+<h6 id="s135" title="Before being dismissed any trash, papers, or items on the floor must to be picked up. 'We leave the room in the same way we like to find it.' "><input type="checkbox" class="cb" id="r135" name="7Reminder" value="s135"/><label id="ls135" for="r135" >Dismissal</label></h6>
+<h6 id="s136" title="Students have mini whiteboards. A) Show me what StudyTopic looks like B) Draw the 2 most important StudyTopic ideas C) What does StudyTopic look like upside down? "><input type="checkbox" class="cb" id="r136" name="7Reminder" value="s136"/><label id="ls136" for="r136" >Draw Me The Answer</label></h6>
+<h6 id="s137" title="In some cultures students do not question teachers. Find opportunities for all students to practice (clarification, repetition and simplification) StudyTopic questions: 'Was this what you meant? Please could you repeat the question? Can you explain that in a simpler way?' "><input type="checkbox" class="cb" id="r137" name="7Reminder" value="s137"/><label id="ls137" for="r137" >Encourage Questions</label></h6>
+<h6 id="s138" title="Be positive and don't offer empty praise. Tell students why their performance was 'good'. "><input type="checkbox" class="cb" id="r138" name="7Reminder" value="s138"/><label id="ls138" for="r138" >Explain Why</label></h6>
+<h6 id="s139" title="Students call out their self-graded marks and they are recorded directly into the class markbook. "><input type="checkbox" class="cb" id="r139" name="7Reminder" value="s139"/><label id="ls139" for="r139" >Grading</label></h6>
+
+
+</div>
+</div><!-- end-->
+
+
+
+
+<div id="standards" style="display:none;"  class="vqhelp" >
+<h5>Standards:</h5> 
+<div class="styleuviolet11">
+<br><br>
+
+
+United Kingdom
+<br>
+<a href="http://www.education.gov.uk/schools/teachingandlearning/curriculum/primary" title="Standards Information" target="_blank">Primary Curriculum</a>
+<br>
+<a href="http://www.education.gov.uk/schools/teachingandlearning/curriculum/secondary" title="Standards Information" target="_blank">Secondary Curriculum</a>
+
+<br><br>
+Australia
+<br>
+<a href="http://www.australiancurriculum.edu.au" title="Standards Information" target="_blank">Curriculum</a>
+<br>
+</div><!--end styleuviolet11-->
+</div><!--end standards end-->
+
+
+
+
+
+</div><!--end idDivQuickIdeas-->
+
+
+<div id="" style="display:none">
+	
+	This is the timer....
+</div>
+
+
+
+
+<div id ="idDivFooterContainer" class="no-print" >
+<div id="idDivFooterLeft">
+<button  id="idButtonCopyRight" class="classButtonPeripheral" type="button" title="©2015 vqplan.com" onClick="buttonPressCopyRight();"  > &nbsp;&nbsp;&nbsp;<i class="fa fa-copyright"></i>&nbsp;&nbsp;&nbsp; </button>
+<button  id="idButtonPressInfo" class="classButtonPeripheral" type="button" title="Info" onClick="buttonPressInfo();"  > &nbsp;&nbsp;&nbsp;<i class="fa fa-info"></i>&nbsp;&nbsp;&nbsp; </button>
+</div><!--idDivFooterLeft end-->
+
+<div id="idDivFooterRight">
+
+<button  id="idButtonEmailSupport" class="classButtonPeripheral" type="button" title="Email" onClick="buttonPressEmailFeedback();"><i class="fa fa-envelope-o"></i> Improvements</button>
+</div><!--end idDivFooterRight-->
+</div><!--end idDivFooterContainer-->
+
+
+
+</div><!--end idDivWrapperContent-->
+
+
+
+
+</div><!--end idDivWrapperBody -->
+
+<script>
+function	buttonPressCopyRight()
+	{
+		alert('copyright');
+	}
+function	buttonPressInfo()
+	{
+		
+	}
+function	buttonPressEmailFeedback()
+	{
+		sendMail2('niel@greenbambooshoots.com','','Feedback/ Help/ Comments','Dear Niel, What I would like to say is ');
+	}
+	
+	
+
+
+
+
+function vqideas()
+{
+
+if(document.getElementById("idDivCreate").style.display != "block")
+{ 
+lessonTemplate();
+}
+
+
+document.getElementById("keywords").setAttribute("style", "display:none");
+document.getElementById("objectives").setAttribute("style", "display:none");
+document.getElementById("starters").setAttribute("style", "display:none");
+document.getElementById("activities").setAttribute("style", "display:none");
+document.getElementById("plenaries").setAttribute("style", "display:none");
+document.getElementById("homework").setAttribute("style", "display:none");
+document.getElementById("resources").setAttribute("style", "display:none");
+document.getElementById("reminders").setAttribute("style", "display:none");
+document.getElementById("standards").setAttribute("style", "display:none");
+
+
+showGeneratePlan();
+
+
+
+var helppos = document.getElementById(cursorPosition+'type').offsetTop;
+document.getElementById(cursorPosition).style.marginTop = (helppos-50)+"px";
+document.getElementById(cursorPosition).style.display = "block";
+document.getElementById(cursorPosition+'type').focus();
+
+}
+
+
+
+
+
+
+
+
+function showActivities() 
+{ 
+
+if (input != "") 
+{
+
+if (document.getElementById('idInputTopic').value != input) 
+{ 
+input = document.getElementById("idInputTopic").value;
+document.body.innerHTML=thetext;
+document.getElementById("idInputTopic").value = input;
+}
+}
+
+else if (document.getElementById('idInputTopic').value == "") 
+{ return }
+
+
+input = document.getElementById("idInputTopic").value;
+
+var toReplace = "StudyTopic";      
+replaceWith = input ;
+
+document.body.innerHTML = document.body.innerHTML.replace(new RegExp(toReplace,'g'), replaceWith);
+
+document.getElementById("idInputTopic").value = input;
+
+keyw = "";
+obje = "To be able to <br>";
+star = "Groups of 2. You have 10 minutes to complete this task. Your StudyTopic task is to <br>";
+acti = "Groups of 2. You have 20 minutes to complete this assignment. Your StudyTopic assignment is to <br>";
+plen = "Groups of 2.  You have 15 minutes to finish and review our StudyTopic lesson. Your task is to <br>";
+home = "Your homework is to be handed in on this lesson next week. Your StudyTopic homework is to <br>";
+reso = "The resources, materials and equipment that we will need for the StudyTopic lesson are <br>";
+remi = "During the StudyTopic lesson we must remember to <br>";
+stan = "The standards that will be worked towards during this StudyTopic lesson are <br>";
+var keywordsurl ="http://en.m.wikipedia.org/wiki/StudyTopic";
+window.resourceSearch ="http://";
+
+
+keyw=keyw.replace("StudyTopic",input);
+obje=obje.replace("StudyTopic",input);
+star=star.replace("StudyTopic",input);
+acti=acti.replace("StudyTopic",input);
+plen=plen.replace("StudyTopic",input);
+home=home.replace("StudyTopic",input);
+reso=reso.replace("StudyTopic",input);
+remi=remi.replace("StudyTopic",input);
+stan=stan.replace("StudyTopic",input);
+keywordsurl =keywordsurl.replace("StudyTopic",input);
+
+document.getElementById("keywordstype").innerHTML = keyw;
+document.getElementById("objectivestype").innerHTML = obje;
+document.getElementById("starterstype").innerHTML = star;
+document.getElementById("activitiestype").innerHTML = acti;
+document.getElementById("plenariestype").innerHTML = plen;
+document.getElementById("homeworktype").innerHTML = home;
+document.getElementById("resourcestype").innerHTML = reso;
+document.getElementById("reminderstype").innerHTML = remi;
+document.getElementById("standardstype").innerHTML = stan;
+document.getElementById("idIframeExternalResources").src=keywordsurl;
+
+document.getElementById("idDivCreate").setAttribute("style", "display:block;");	
+document.getElementById("idDivStartNewPlanContainer").setAttribute("style", "display:none");
+
+}
+
+
+
+function setEnd()
+{
+
+vqideas();
+elem= document.getElementById(document.activeElement.id);
+
+var range,selection;
+if(document.createRange)
+{
+range = document.createRange();
+range.selectNodeContents(elem);
+range.collapse(false);
+selection = window.getSelection();
+selection.removeAllRanges();
+selection.addRange(range);
+}
+else if(document.selection)
+{ 
+range = document.body.createTextRange();
+range.moveToElementText(elem);
+range.collapse(false);
+range.select();
+}
+
+window.scrollTo(0, document.getElementById(cursorPosition+'type').offsetTop-45);
+
+}
+
+
+
+function lessonTemplate()
+{
+	document.title = "VQ Plan";
+	addURLsToPlan();
+	
+showActivities();
+
+}
+
+
+
+
+function veryQuick()
+{
+showActivities();
+
+
+document.getElementById("keywordstype").innerHTML = "";
+document.getElementById("objectivestype").innerHTML = "";
+document.getElementById("starterstype").innerHTML = "";
+document.getElementById("activitiestype").innerHTML = "";
+document.getElementById("plenariestype").innerHTML = "";
+document.getElementById("homeworktype").innerHTML = "";
+document.getElementById("resourcestype").innerHTML = "";
+document.getElementById("reminderstype").innerHTML = "";
+document.getElementById("standardstype").innerHTML = stan;
+
+var selection ="";
+preprannum = Math.random()*3;
+rannum = Math.round(preprannum);
+
+var selection0=["r3","r77","r167","r267","r377","r379"];
+var selection1=["r13","r97","r177","r259","r369","r398"];
+var selection2=["r9","r89","r158","r258","r368","r389"];
+var selection4=["r4","r87","r157","r257","r367","r388"];
+
+
+if(rannum == "0") {selection = selection0;}
+else if(rannum == "1") {selection = selection1;}
+else if(rannum == "2") {selection = selection2;}
+else if(rannum == "3") {selection = selection3;}
+
+//var selection = selection0;
+
+for(i=0;i<selection.length;i++){
+document.getElementById(selection[i]).checked="true";
+}
+
+/*
+document.getElementById("r4").checked="true";
+document.getElementById("r87").checked="true";
+document.getElementById("r157").checked="true";
+document.getElementById("r257").checked="true";
+document.getElementById("r367").checked="true";
+*/
+
+
+showGeneratePlan();
+}
+
+
+
+
+function showGeneratePlan() 
+{
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("1Objective");
+
+for(i=0;i<ck.length; i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined; 
+
+var originalobjectives = document.getElementById("objectivestype").innerHTML;
+if(cursorPosition === "objectives")
+{
+if(originalobjectives === obje){originalobjectives=""}
+}
+document.getElementById("objectivestype").innerHTML = originalobjectives + ideasCombined;
+}}
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("2Starter");
+
+for(i=0;i<ck.length;i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined;
+
+var originalstarters = document.getElementById("starterstype").innerHTML;
+if(cursorPosition === "starters")
+{
+if(originalstarters === star){originalstarters=""}
+}
+document.getElementById("starterstype").innerHTML = originalstarters + ideasCombined;
+}} 
+
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("3Activity");
+for(i=0;i<ck.length;i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined; 
+
+var originalactivities = document.getElementById("activitiestype").innerHTML;
+if(cursorPosition === "activities")
+{
+if(originalactivities === acti){originalactivities=""}
+}
+document.getElementById("activitiestype").innerHTML = originalactivities + ideasCombined;
+}}
+
+
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("4Plenary");
+for(i=0;i<ck.length;i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined;
+
+var originalplenaries = document.getElementById("plenariestype").innerHTML;
+if(cursorPosition === "plenaries")
+{
+if(originalplenaries === plen){originalplenaries=""}
+}
+document.getElementById("plenariestype").innerHTML = originalplenaries + ideasCombined;
+}} 
+
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("5Homework");
+for(i=0;i<ck.length;i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined; 
+var originalhomework = document.getElementById("homeworktype").innerHTML;
+if(cursorPosition === "homework")
+{if(originalhomework === home){originalhomework=""}}
+document.getElementById("homeworktype").innerHTML = originalhomework + ideasCombined;
+}}
+
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("6Resources");
+for(i=0;i<ck.length;i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined; 
+var originalresources = document.getElementById("resourcestype").innerHTML;
+if(cursorPosition === "resources")
+{if(originalresources === reso){originalresources=""}}
+document.getElementById("resourcestype").innerHTML = originalresources + ideasCombined;
+}}
+
+
+ideasCombined="";
+ck = "";
+collectID="";
+ideaTitle="";
+ideaDetail="";
+ck = document.getElementsByName("7Reminder");
+for(i=0;i<ck.length;i++){
+if (ck[i].checked){   
+collectID = ck[i].value;
+document.getElementById(ck[i].id).checked=false;
+ideaTitle = document.getElementById("l"+collectID).innerHTML;
+ideaDetail = document.getElementById(collectID).title;
+ideasCombined = ideaTitle +" - "+ ideaDetail + '<br>' +ideasCombined; 
+var originalreminders = document.getElementById("reminderstype").innerHTML;
+if(cursorPosition === "reminders")
+{if(originalreminders === remi){originalreminders=""}}
+document.getElementById("reminderstype").innerHTML = originalreminders + ideasCombined;
+}}
+
+
+document.getElementById("objectives").setAttribute("style", "display:none");
+document.getElementById("starters").setAttribute("style", "display:none");
+document.getElementById("activities").setAttribute("style", "display:none");
+document.getElementById("plenaries").setAttribute("style", "display:none");
+document.getElementById("homework").setAttribute("style", "display:none");
+document.getElementById("resources").setAttribute("style", "display:none");
+document.getElementById("reminders").setAttribute("style", "display:none");
+
+
+
+}
+
+
+
+
+function selectText2(element)
+{
+var doc = document;
+var text = doc.getElementById(element);
+
+if(doc.body.createTextRange){
+var range = doc.body.createTextRange();
+range.moveToElementText(text);
+range.select();
+}
+else if (window.getSelection){
+var selection = window.getSelection();
+var range = doc.createRange();
+range.selectNodeContents(text);
+selection.removeAllRanges();
+selection.addRange(range);
+}
+}
+
+
+
+
+function newPlan()
+{
+
+window.location.reload(false);
+
+}
+
+
+function handleTabPressTI(event) 
+{
+if (document.getElementById('idInputTopic').value == '') { if (event.keyCode === 09){ event.returnValue = false } }
+
+if(event && event.keyCode === 09) 
+{
+
+
+lessonTemplate();
+
+
+}			
+} 	
+
+
+function handleKeypress(event) 
+{
+if (document.getElementById('idInputTopic').value == '') { return }
+
+if(event && event.keyCode === 13) 
+{
+lessonTemplate();
+
+document.getElementById("objectivestype").focus();
+}			
+} 
+
+function buttonPressVQPlan ()
+{
+	
+document.title = "VQplan Create";
+lessonTemplate();
+document.getElementById("objectivestype").focus();
+}
+
+function buttonPressVVVQPlan ()
+{
+veryQuick();
+document.getElementById("objectivestype").focus();
+}
+
+
+
+function kwFocus()
+{
+
+document.getElementById("objectivestype").focus();
+}
+
+
+function returnListen(event)
+{
+if( event.keyCode === 13|| event.keyCode === 09 ) 
+{
+if(document.activeElement.tabIndex < 0)	
+{
+event.preventDefault();
+event.returnValue = false;
+vqideas();
+}
+}			
+}
+
+
+
+
+function handleTabPress(event) 
+{
+if(event && event.keyCode === 09) 
+{
+
+selectText2('idDivThePlan');
+}			
+} 	
+
+
+
+
+function runn()
+{
+setTimeout("vqideas()", 1);			
+}
+
+function stopScroll()
+{
+document.getElementById('idDivWrapperBody').style.overflow = "hidden";
+
+//problem
+}
+
+function startScroll()
+{
+document.getElementById('idDivWrapperBody').style.overflow = "auto";
+}
+
+function getMonthNameByMonthNumber(mm) { 
+var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"); 
+
+return months[mm]; 
+}
+
+function theDate()
+{	
+var d = new Date();
+var mm= d.getMinutes().toString();
+mm =("0" + mm).slice(-2);
+var hh  = d.getHours().toString();
+hh =("0" + hh).slice(-2);
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+//document.getElementById("demo").innerHTML = days[d.getDay()];
+//var theDate = days[d.getDay()]+" "+ d.getMonth()+" "+d.getHour()+" "+d.getMinutes();
+var rightNow = new Date();
+var res = rightNow.toISOString().slice(0,10).replace(/-/g,"-");
+var niceDate = " "+res+" "+hh+":"+mm+" "+days[d.getDay()];
+return niceDate;
+}
+
+
+
+function sendMail2(To,CC,Subject,Body) {
+var launchEmailWith = "mailto:"+To
++ "?cc="+CC
++ "&subject=" + Subject
++ "&body=" + Body;
+window.location.href = launchEmailWith;
+}
+
+
+
+function generateTextDoc()
+{
+	//theDate()+" "+
+var filename=input+".txt";
+var text=document.getElementById('idTextareaTextForCopying').value;
+var pom = document.createElement('a');
+pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+pom.setAttribute('download', filename);
+//window.open(pom);
+pom.click();
+
+}
+
+
+
+var thetext = document.body.innerHTML;
+
+</script>
+
+</body>
+</html>

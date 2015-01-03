@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="author" content="Niel Ryan" />
+<meta name="dcterms.rightsHolder" content="(c) Niel Ryan, VQplan.com 2015 All Rights Reserved v2.1">
+	<link href="/font-awesome.min.css" rel="stylesheet">
+	<title>Loading....</title>
+	<style>
+		body,html
+		{
+			font-family: courier;
+			height:100%;
+			margin:0;
+			padding: 0;
+		}
+		#idDivBodyWrapper
+		{
+			height: 100%;
+			background: lightgray;
+		}
+		
+		#idhovereffect	{display:inline;cursor:pointer;}
+		
+		#idhovereffect2
+		{
+			display:none;cursor:pointer;	}
+
+		
+		
+		#idhovercapture:hover  #idhovereffect2 {display:inline;}
+		#idhovercapture:hover  #idhovereffect	{display:none;}
+		
+
+		</style>
+</head>
+
+
+<body>
+	<div id="idDivBodyWrapper">
+		<div style="position:absolute;display:block;float:left;left:0;Top:0"><button class="btn btn-default btn-lg" style="opacity:1;background:transparent;font-family:courier;font-weight:bold;" onclick="location.href='http://vqplan.com';" onMouseOver="this.style.backgroundColor='silver'" onMouseOut="this.style.backgroundColor='lightgray'" ><i style="color:darkblue;opacity:.5;" class="fa fa-th fa-fw fa-5x"></i><br><span style="opacity:1;" >>home</span></button></div>
+		
+		
+	 <table style="width: 100%; height: 100%;"><tr><td style="vertical-align:middle; text-align: center">
+	<h1 style="font-size:10vh;">Doing good design is <span onclick="" id="idhovercapture"><span id="idhovereffect">easy.</span><span id="idhovereffect2" >hard.</span></span></h1>
+	</td></tr></table>
+	</div>
+</body>
+
+</html>

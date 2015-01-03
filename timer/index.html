@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href="/font-awesome.min.css" rel="stylesheet">
+	<meta charset="utf-8"/>
+<title>timer</title>
+<style>
+	
+
+	body{
+		
+		width: 100%;
+		height:100%;
+		text-align:center;
+		margin: 0;
+	padding:0;
+	}
+	
+.depth
+{
+	display:inline;
+	visibility: visible;
+}
+
+.depthhide
+{
+	display:inline;
+	visibility: hidden;
+}
+
+textarea
+{
+	color: gray;
+	border-color: transparent;
+	vertical-align:sub;
+	font-size: 4vmin;
+	display: none;
+	visibility: hidden;
+}
+
+textarea:hover
+{
+	color: gray;
+	border-color: silver;
+	vertical-align:sub;
+	font-size: 4vmin;
+		-webkit-transition: color .5s linear, border-color .5s ease-in-out;
+	-moz-transition: color .5s linear, border-color .5s ease-in-out;
+	-o-transition: color .5s linear, border-color .5s ease-in-out;
+	transition: color .5s linear, border-color .5s ease-in-out;
+	display: inline;
+	visibility: hidden;
+}
+h4
+{
+	display: block;
+	padding: 0;
+	line-height: 0;
+	margin:0;
+}
+
+h1
+{	margin:0;
+	padding: 0;
+}
+
+#settingstext
+{
+	display: block;
+	font: bold;
+	font-size: 20vmin;
+	opacity: .1;
+	
+	margin: 0px;
+	padding:0px;
+	
+	 -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  
+
+
+ 
+}
+
+#settingstext:hover
+{
+	font: bold;
+	font-size: 20vmin;
+	opacity: .2;
+	
+		margin: 0;
+	padding:0;
+	
+	
+}
+
+#settingstext:active
+{
+	display: inline;
+	font: bold;
+	font-size: 20vmin;
+	opacity: 1;
+	
+	margin: 0;
+	padding:0;
+
+	
+		border: 2px solid;
+	border-radius: 25;
+	border-color: gray;
+
+}
+
+
+#settings
+{
+	
+	display: block;
+	margin: 0px;
+	padding:0px;
+	top:4%;
+	left:4%;
+	position: absolute;
+
+	
+
+}
+
+#startArea
+{
+
+	position: relative;
+
+
+	margin:0;
+	padding: 0;
+	
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+
+}
+
+
+
+#iconplaypause
+{
+	z-index: -99;
+	position: absolute;
+		height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	top:50%;
+	
+	left: 0;
+		font-size: 50vh;
+		opacity: .05;
+}
+
+
+	#placeid1
+	{
+		text-transform: uppercase;
+		font-size: 25vh;
+		font-family: courier;
+		background-color:transparent;
+		position: absolute;
+		
+		vertical-align: middle;
+		top:50%;
+		left:0;
+		opacity: 1;
+	}
+	
+
+	button
+	{
+		
+		font-family: courier;
+		font-weight: bold;
+		font-size: 25vh;
+		
+		border-radius: 5vh;
+		background-color:transparent;
+		outline: none;
+		vertical-align: middle;
+		}	
+
+	
+	#footerid
+	{
+		
+		position:absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	</style>
+	
+	
+	<script>
+		//variables to declare
+		
+window.base = "10";
+	window.b = "";
+	window.c = "";
+	window.d = "";
+	window.secondsAdded1= "";
+window.secondsAdded2= "";
+window.secondsAdded3= "";
+window.secondsAdded4= "";
+
+window.theTimer ="0";
+window.originalOrientation = "";
+window.startTime="";
+	
+window.ratioForTextOnSceen = "3";
+
+window.urlValues =[];
+
+window.timerCurrentlyPlaying = 0;
+		</script>
+		
+	<script>
+		
+//		window.open("index.html","fs","fullscreen,scrollbars");
+		
+		//get the substring
+		var QueryString = function () {
+  // This function is anonymous, is executed immediately and 
+  // the return value is assigned to QueryString!
+  var URLminutes = "";
+  var URLseconds ="";
+  var URLbase ="";
+  
+  var query_string = {};
+  var query = window.location.search.substring(1);
+  
+  if(query==="")
+  {
+
+//window.location.href = "/?5";
+  }
+  //create array and make it lowercase
+  var tmpurlValues = query.split("&");
+  var tmp = tmpurlValues.join('~').toLowerCase()
+window.urlValues = tmp.split('~')
+  
+ // alert(window.urlValues);
+  
+  for (var i=0;i<urlValues.length;i++) {
+    var pair = urlValues[i].split("=");
+    	// If first entry with this name
+    if (typeof query_string[pair[0]] === "undefined") {
+      query_string[pair[0]] = pair[1];
+    	// If second entry with this name
+    } else if (typeof query_string[pair[0]] === "string") {
+      var arr = [ query_string[pair[0]], pair[1] ];
+      query_string[pair[0]] = arr;
+    	// If third or later entry with this name
+    } else {
+      query_string[pair[0]].push(pair[1]);
+    }
+  } 
+ // 
+ setBase(null);
+ 
+ //alert(urlValues);
+ var urlFirstValue = (urlValues[0]);
+ 
+var urlFirstValueAsNum = parseInt(urlFirstValue);
+ //alert(urlFirstValueAsNum);
+ var minsToAdd = (float2int (urlFirstValueAsNum))*60
+// window.secondsAdded1 = minsToAdd; 
+ var secsToAdd =   parseInt(findSecondsFromDec(urlFirstValue));
+ window.secondsAdded1 = minsToAdd + secsToAdd;
+   //  return query;
+    
+} ();
+
+
+
+function searchStringInArray (str, strArray) {
+    for (var j=0; j<strArray.length; j++) {
+        if (strArray[j].match(str)) return j;
+    }
+    return -1;
+}
+
+
+function findSecondsFromDec(num) {
+var numasstring=	num.toString();
+
+///the next 5 lines don't work....
+  var numdecimals = (numasstring.split(".")[1] || []).length;
+  var multiplier = Math.pow(10,numdecimals);
+  var numasnum = Math.floor(num);
+  var decimalonly = num-numasnum;
+ var asNumber = decimalonly*multiplier;
+ 
+ var split = numasstring.split(".");
+ if(split.length===1)
+ {
+	// alert('nun');
+	 return 0;
+ }
+// alert (split);
+return  split[1];
+    //    /,| /      /[ \(,\)]+/
+  
+ // return  ;
+}
+
+
+
+function float2int (value) {
+    return value | 0;
+}
+
+
+//setbase(16);
+
+function setBase(value)
+{
+	//alert(searchStringInArray("base",window.urlValues));
+	var baseString = window.urlValues[searchStringInArray("base",window.urlValues)];
+	
+	if (baseString === undefined)
+	{
+		window.base = 10;
+		return;
+	}
+//	alert(baseString);
+	//var str = "Visit W3Schools!";
+var n = baseString.search("base");
+var baseNumber = parseInt( baseString.substring(n+4, n+6));
+
+
+if(baseNumber > 1&&baseNumber<37)
+{
+	//alert(baseNumber);
+	window.base =baseNumber;
+}
+else
+{
+	window.base = 10;
+}
+//	alert('hi');
+	if(value!==null){
+	window.base = value;
+	
+	alert("err3");
+	return;
+}
+
+//alert("errme");
+
+}
+
+//alert(QueryString(a));
+
+//
+
+function addToUrlValues(value){
+
+window.urlValues.push(value);//push function will insert values in the list array
+}
+
+
+		//alert(query);
+		</script>
+	
+
+	
+	<script>
+		//detect keyboard presses and control the timer. e.g. press 8 for 8 minutes timer. 
+		
+		//note odd behaviour of some detected e.g. triple recognition results in a positive. 
+		window.addEventListener("keydown", dealWithKeyboard, false);
+		window.addEventListener("keypress", dealWithKeyboard, false);
+		window.addEventListener("keyup", dealWithKeyboard, false);
+ 
+function dealWithKeyboard(e) {
+    // gets called when any of the keyboard events are overheard
+var arrayStrokes={};
+
+//arrayStrokes = 
+    switch(e.keyCode) {
+        case 37:
+            // left key pressed
+         //   alert("The '0'left arrow key is pressed.");
+            break;
+        case 38:
+            // up key pressed
+        //    alert("The up arrow key is pressed.");
+            break;
+        case 39:
+            // right key pressed
+            break;
+        case 40:
+            // down key pressed
+            break;  
+            
+                    case 32:
+            //space bar
+            timerPress();
+            break; 
+                        case 19:
+            // pause
+            timerPress();
+                        break; 
+            }
+   
+            
+            
+             switch(e.charCode) {
+   //    var     timeToPass = charCode;
+                    case 48:
+       // 0
+      //  alert("The '0' key is pressed.");
+      minutesSet(e.charCode);
+            break;
+        case 49:
+         // 1
+         minutesSet(e.charCode);
+                        break;
+        case 50:
+             //2
+             minutesSet(e.charCode);
+            break;
+        case 51:
+             //3
+            minutesSet(e.charCode);
+            break; 
+                                case 52:
+           //4
+           minutesSet(e.charCode);
+            break;
+        case 53:
+            //5
+            minutesSet(e.charCode);
+                        break;
+        case 54:
+             //6
+            minutesSet(e.charCode);
+            break;
+        case 55:
+             //7
+            minutesSet(e.charCode);
+            break; 
+                                case 56:
+            //8
+            minutesSet(e.charCode);
+            break;
+        case 57:
+            //9
+            minutesSet(e.charCode);
+                        break;
+        case 127:
+             // delete
+         //   alert("The del key is pressed.");
+            break;
+                    case 46:
+             // dot
+   //    alert("dot.");
+      
+            break;
+       case 8:
+             // backspace
+         //   alert("The bs key is pressed.");
+         window.location.href = "/sites3.html";  
+        // QueryString();
+            break;
+                   case 0:
+             // undefined
+            break;    
+    }   
+    
+}
+
+
+		
+function minutesSet(minutes)
+{
+	//stop time if it's running
+	clearInterval(window.theTimer);
+//set the URL minutes from key strokes. 
+window.newTimeInSeconds = (minutes-48)*60;
+//window.location.href = "/tt.html?"+newTimeInSeconds;
+var timerSetInMinutes = (minutes-48);
+
+window.history.pushState('/?'+timerSetInMinutes, '', '/?'+timerSetInMinutes);
+
+
+ window.secondsAdded1 = (timerSetInMinutes*60);
+ 
+ //alert(window.secondsAdded1);
+ 
+// startTime();
+
+// updateCounter ();
+location.reload(false);
+
+// window.location.href += "#mypara";
+//location.reload(false);
+// window.location.reload(false) = "/tt.html?"+newTimeInSeconds;
+ 
+//  QueryString();
+}	
+
+
+
+
+
+
+	
+function timerPress(){
+	
+	
+//	alert(window.differenceInSeconds);
+	if(window.differenceInSeconds===-1)
+	{
+		//alert('end');
+		location.reload(false);
+	}
+if(window.theTimer!=="0")
+{
+	//
+	
+	 clearInterval(window.theTimer);
+	 window.theTimer = '0';
+	 document.getElementById("iconplaypause").innerHTML=">";
+	//alert(window.theTimer);
+}
+else{
+	//alert(window.theTimer);
+	
+	window.startTime = new Date();
+	startTime.setSeconds ( startTime.getSeconds() + window.differenceInSeconds );
+	window.theTimer = setInterval(window.updateCounter, 1000);
+	document.getElementById("iconplaypause").innerHTML="pl";
+	}
+}
+	
+	
+	window.addEventListener("resize", displayViewportSize, false);
+ 
+function displayViewportSize(e) {
+	//alert("resize");
+var viewportWidth = document.documentElement.clientWidth;
+var viewportHeight = document.documentElement.clientHeight;
+
+var positioningDiv = document.querySelector("#play");
+var myDiv = document.querySelector("#startArea");
+
+var placeid1 = document.querySelector("#placeid1");
+
+window.playpauseid = document.querySelector("iconplaypause");
+
+var neededHeightPerc = ((viewportWidth/window.ratioForTextOnSceen)/viewportHeight)*100;
+//var textSize = Math.round(myDiv.offsetWidth / 25);
+placeid1.style.fontSize = (neededHeightPerc-4) + "vh";
+playpauseid.style.fontSize = (neededHeightPerc-4) + "vh";
+//vertical positioning
+
+var positionPercent = 50-(neededHeightPerc/2);
+placeid1.style.top = positionPercent + "%";
+playpauseid.style.top = positionPercent + "%";
+
+}
+
+	</script>	
+
+	<audio id="sound_example" title="Sample" preload="auto">
+  <source src="alert.mp3" type="audio/mpeg">
+</audio>
+
+
+</head>
+
+<body>
+
+
+
+  <div id="startArea" >
+ 
+
+
+
+
+<div id="iconplaypause">
+	
+	<i class="fa fa-play"/></i>
+	<i class="fa fa-pause"/></i>
+	<i class="fa fa-refresh"/></i>
+	
+</div>
+
+
+
+<button type="button" onclick="timerPress();" id="placeid1"/>
+
+
+
+
+
+  </div>
+  
+
+  <div>
+	  
+  </div>
+  
+  <footer id="footerid">
+  <i class="fa fa-envelope-o"/></i>
+  <a href="mailto:niel@gm.com">email</a>
+  </footer>
+  
+  
+</body>
+
+
+<script>
+	
+
+
+	  
+function startTime()
+{	
+window.startTime = new Date();
+startTime.setSeconds ( startTime.getSeconds() + window.secondsAdded1 );
+}
+startTime();
+
+
+function updateCounter () {
+	//this is the countdown, it uses the startTime and the currentTime to countdown.
+    var currentTime = Date.now();
+   // document.write("hn");
+    window.differenceInSeconds = Math.round((window.startTime - currentTime) / 1000);
+    if (differenceInSeconds>-1){
+ 
+	  
+//	  window.seconds = differenceInSeconds;
+//	  window.minutes= differenceInSeconds;
+	  
+	
+	  b=differenceInSeconds%60;
+c = Math.floor((differenceInSeconds/(60)));
+
+//window.base
+
+b = b.toString(base);
+c = c.toString(base);
+
+//set format if denaryish number
+if(base>=6)
+{
+b = ("00" + b).slice(-2); 
+c = ("00" + c).slice(-2); 
+window.textToDisplay = c+":"+b;
+document.getElementById("placeid1").innerHTML=textToDisplay;
+}
+
+if(base<6)
+{
+	b = ("000000" + b).slice(-6); 
+c = ("000000" + c).slice(-6); 
+document.getElementById("placeid1").innerHTML=b+"<br>"+c;
+}
+ 
+//	endSound("alert.mp3");
+endSound();
+
+    }
+    else{
+   clearInterval(window.theTimer);
+   return;
+   }
+}
+
+updateCounter ();
+
+	 //End sound
+	  function endSound(){ 
+		  if (window.differenceInSeconds===0&&window.secondsAdded1!==0){ 
+			  //set to reset
+			  document.getElementById("iconplaypause").innerHTML="<<";
+			  //sound play
+var playThis = document.getElementById("sound_example");
+if (!playThis.paused) {
+    playThis.pause();
+    playThis.currentTime = 0.0;
+}
+playThis.play();
+}
+return;
+}
+//endSound();
+
+//ensure optimal sizing on load, call the resize function. 
+window.onload = displayViewportSize();
+
+</script>
+
+
+</html>

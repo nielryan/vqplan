@@ -1,0 +1,853 @@
+<!doctype html>
+
+<html>
+	<head>
+			<meta charset="UTF-8" />
+	<meta name="author" content="Niel Ryan" />
+<meta name="dcterms.rightsHolder" content="(c) Niel Ryan, VQplan.com 2015 All Rights Reserved v2.1">
+		<link href="/font-awesome.min.css" rel="stylesheet">
+		<title>stories</title>
+		<style>
+			
+			html,body{
+				margin:0;
+				border:0;
+				font-family:courier;
+				min-height: 100%;
+				min-width: 100%;
+				max-height: 100%;
+				max-width: 100%;
+			}
+			</style>
+			
+	<script>
+	var	data = [{"IconName":"fa-angellist","Included":""},
+{"IconName":"fa-area-chart","Included":""},
+{"IconName":"fa-at","Included":""},
+{"IconName":"fa-bell-slash","Included":""},
+{"IconName":"fa-bell-slash-o","Included":""},
+{"IconName":"fa-bicycle","Included":""},
+{"IconName":"fa-binoculars","Included":""},
+{"IconName":"fa-birthday-cake","Included":""},
+{"IconName":"fa-bus","Included":""},
+{"IconName":"fa-calculator","Included":""},
+{"IconName":"fa-cc","Included":""},
+{"IconName":"fa-cc-amex","Included":""},
+{"IconName":"fa-cc-discover","Included":""},
+{"IconName":"fa-cc-mastercard","Included":""},
+{"IconName":"fa-cc-paypal","Included":""},
+{"IconName":"fa-cc-stripe","Included":""},
+{"IconName":"fa-cc-visa","Included":""},
+{"IconName":"fa-copyright","Included":""},
+{"IconName":"fa-eyedropper","Included":"y"},
+{"IconName":"fa-futbol-o","Included":""},
+{"IconName":"fa-google-wallet","Included":""},
+{"IconName":"fa-ils","Included":""},
+{"IconName":"fa-ioxhost","Included":""},
+{"IconName":"fa-lastfm","Included":""},
+{"IconName":"fa-lastfm-square","Included":""},
+{"IconName":"fa-line-chart","Included":""},
+{"IconName":"fa-meanpath","Included":""},
+{"IconName":"fa-newspaper-o","Included":"y"},
+{"IconName":"fa-paint-brush","Included":""},
+{"IconName":"fa-paypal","Included":""},
+{"IconName":"fa-pie-chart","Included":"y"},
+{"IconName":"fa-plug","Included":"y"},
+{"IconName":"fa-shekel (alias)","Included":""},
+{"IconName":"fa-sheqel (alias)","Included":""},
+{"IconName":"fa-slideshare","Included":""},
+{"IconName":"fa-soccer-ball-o (alias)","Included":""},
+{"IconName":"fa-toggle-off","Included":""},
+{"IconName":"fa-toggle-on","Included":""},
+{"IconName":"fa-trash","Included":"y"},
+{"IconName":"fa-tty","Included":""},
+{"IconName":"fa-twitch","Included":""},
+{"IconName":"fa-wifi","Included":"y"},
+{"IconName":"fa-yelp","Included":""},
+{"IconName":"fa-adjust","Included":""},
+{"IconName":"fa-anchor","Included":""},
+{"IconName":"fa-archive","Included":""},
+{"IconName":"fa-area-chart","Included":"y"},
+{"IconName":"fa-arrows","Included":""},
+{"IconName":"fa-arrows-h","Included":""},
+{"IconName":"fa-arrows-v","Included":""},
+{"IconName":"fa-asterisk","Included":""},
+{"IconName":"fa-at","Included":""},
+{"IconName":"fa-automobile (alias)","Included":""},
+{"IconName":"fa-ban","Included":""},
+{"IconName":"fa-bank (alias)","Included":""},
+{"IconName":"fa-bar-chart","Included":""},
+{"IconName":"fa-bar-chart-o (alias)","Included":""},
+{"IconName":"fa-barcode","Included":"y"},
+{"IconName":"fa-bars","Included":"y"},
+{"IconName":"fa-beer","Included":"y"},
+{"IconName":"fa-bell","Included":""},
+{"IconName":"fa-bell-o","Included":"y"},
+{"IconName":"fa-bell-slash","Included":""},
+{"IconName":"fa-bell-slash-o","Included":"y"},
+{"IconName":"fa-bicycle","Included":"y"},
+{"IconName":"fa-binoculars","Included":"y"},
+{"IconName":"fa-birthday-cake","Included":"y"},
+{"IconName":"fa-bolt","Included":"y"},
+{"IconName":"fa-bomb","Included":"y"},
+{"IconName":"fa-book","Included":"y"},
+{"IconName":"fa-bookmark","Included":""},
+{"IconName":"fa-bookmark-o","Included":"y"},
+{"IconName":"fa-briefcase","Included":"y"},
+{"IconName":"fa-bug","Included":"y"},
+{"IconName":"fa-building","Included":""},
+{"IconName":"fa-building-o","Included":"y"},
+{"IconName":"fa-bullhorn","Included":"y"},
+{"IconName":"fa-bullseye","Included":"y"},
+{"IconName":"fa-bus","Included":"y"},
+{"IconName":"fa-cab (alias)","Included":""},
+{"IconName":"fa-calculator","Included":"y"},
+{"IconName":"fa-calendar","Included":""},
+{"IconName":"fa-calendar-o","Included":"y"},
+{"IconName":"fa-camera","Included":"y"},
+{"IconName":"fa-camera-retro","Included":"y"},
+{"IconName":"fa-car","Included":"y"},
+{"IconName":"fa-caret-square-o-down","Included":""},
+{"IconName":"fa-caret-square-o-left","Included":""},
+{"IconName":"fa-caret-square-o-right","Included":""},
+{"IconName":"fa-caret-square-o-up","Included":""},
+{"IconName":"fa-cc","Included":""},
+{"IconName":"fa-certificate","Included":"y"},
+{"IconName":"fa-check","Included":"y"},
+{"IconName":"fa-check-circle","Included":""},
+{"IconName":"fa-check-circle-o","Included":""},
+{"IconName":"fa-check-square","Included":""},
+{"IconName":"fa-check-square-o","Included":""},
+{"IconName":"fa-child","Included":"y"},
+{"IconName":"fa-circle","Included":"y"},
+{"IconName":"fa-circle-o","Included":""},
+{"IconName":"fa-circle-o-notch","Included":""},
+{"IconName":"fa-circle-thin","Included":""},
+{"IconName":"fa-clock-o","Included":"y"},
+{"IconName":"fa-close (alias)","Included":""},
+{"IconName":"fa-cloud","Included":"y"},
+{"IconName":"fa-cloud-download","Included":"y"},
+{"IconName":"fa-cloud-upload","Included":""},
+{"IconName":"fa-code","Included":""},
+{"IconName":"fa-code-fork","Included":""},
+{"IconName":"fa-coffee","Included":"y"},
+{"IconName":"fa-cog","Included":""},
+{"IconName":"fa-cogs","Included":"y"},
+{"IconName":"fa-comment","Included":""},
+{"IconName":"fa-comment-o","Included":""},
+{"IconName":"fa-comments","Included":""},
+{"IconName":"fa-comments-o","Included":""},
+{"IconName":"fa-compass","Included":""},
+{"IconName":"fa-copyright","Included":""},
+{"IconName":"fa-credit-card","Included":""},
+{"IconName":"fa-crop","Included":""},
+{"IconName":"fa-crosshairs","Included":""},
+{"IconName":"fa-cube","Included":""},
+{"IconName":"fa-cubes","Included":"y"},
+{"IconName":"fa-cutlery","Included":""},
+{"IconName":"fa-dashboard (alias)","Included":""},
+{"IconName":"fa-database","Included":"y"},
+{"IconName":"fa-desktop","Included":"y"},
+{"IconName":"fa-dot-circle-o","Included":""},
+{"IconName":"fa-download","Included":""},
+{"IconName":"fa-edit (alias)","Included":""},
+{"IconName":"fa-ellipsis-h","Included":""},
+{"IconName":"fa-ellipsis-v","Included":""},
+{"IconName":"fa-envelope","Included":""},
+{"IconName":"fa-envelope-o","Included":""},
+{"IconName":"fa-envelope-square","Included":""},
+{"IconName":"fa-eraser","Included":"y"},
+{"IconName":"fa-exchange","Included":"y"},
+{"IconName":"fa-exclamation","Included":""},
+{"IconName":"fa-exclamation-circle","Included":""},
+{"IconName":"fa-exclamation-triangle","Included":""},
+{"IconName":"fa-external-link","Included":""},
+{"IconName":"fa-external-link-square","Included":""},
+{"IconName":"fa-eye","Included":"y"},
+{"IconName":"fa-eye-slash","Included":"y"},
+{"IconName":"fa-eyedropper","Included":"y"},
+{"IconName":"fa-fax","Included":""},
+{"IconName":"fa-female","Included":"y"},
+{"IconName":"fa-fighter-jet","Included":"y"},
+{"IconName":"fa-file-archive-o","Included":""},
+{"IconName":"fa-file-audio-o","Included":""},
+{"IconName":"fa-file-code-o","Included":""},
+{"IconName":"fa-file-excel-o","Included":""},
+{"IconName":"fa-file-image-o","Included":""},
+{"IconName":"fa-file-movie-o (alias)","Included":""},
+{"IconName":"fa-file-pdf-o","Included":""},
+{"IconName":"fa-file-photo-o (alias)","Included":""},
+{"IconName":"fa-file-picture-o (alias)","Included":""},
+{"IconName":"fa-file-powerpoint-o","Included":""},
+{"IconName":"fa-file-sound-o (alias)","Included":""},
+{"IconName":"fa-file-video-o","Included":""},
+{"IconName":"fa-file-word-o","Included":""},
+{"IconName":"fa-file-zip-o (alias)","Included":""},
+{"IconName":"fa-film","Included":""},
+{"IconName":"fa-filter","Included":""},
+{"IconName":"fa-fire","Included":"y"},
+{"IconName":"fa-fire-extinguisher","Included":"y"},
+{"IconName":"fa-flag","Included":"y"},
+{"IconName":"fa-flag-checkered","Included":"y"},
+{"IconName":"fa-flag-o","Included":"y"},
+{"IconName":"fa-flash (alias)","Included":"y"},
+{"IconName":"fa-flask","Included":"y"},
+{"IconName":"fa-folder","Included":"y"},
+{"IconName":"fa-folder-o","Included":""},
+{"IconName":"fa-folder-open","Included":""},
+{"IconName":"fa-folder-open-o","Included":""},
+{"IconName":"fa-frown-o","Included":""},
+{"IconName":"fa-futbol-o","Included":""},
+{"IconName":"fa-gamepad","Included":"y"},
+{"IconName":"fa-gavel","Included":"y"},
+{"IconName":"fa-gear (alias)","Included":""},
+{"IconName":"fa-gears (alias)","Included":""},
+{"IconName":"fa-gift","Included":"y"},
+{"IconName":"fa-glass","Included":"y"},
+{"IconName":"fa-globe","Included":"y"},
+{"IconName":"fa-graduation-cap","Included":"y"},
+{"IconName":"fa-group (alias)","Included":""},
+{"IconName":"fa-hdd-o","Included":"y"},
+{"IconName":"fa-headphones","Included":"y"},
+{"IconName":"fa-heart","Included":""},
+{"IconName":"fa-heart-o","Included":"y"},
+{"IconName":"fa-history","Included":"y"},
+{"IconName":"fa-home","Included":"y"},
+{"IconName":"fa-image (alias)","Included":""},
+{"IconName":"fa-inbox","Included":"y"},
+{"IconName":"fa-info","Included":"y"},
+{"IconName":"fa-info-circle","Included":""},
+{"IconName":"fa-institution (alias)","Included":""},
+{"IconName":"fa-key","Included":"y"},
+{"IconName":"fa-keyboard-o","Included":"y"},
+{"IconName":"fa-language","Included":"y"},
+{"IconName":"fa-laptop","Included":"y"},
+{"IconName":"fa-leaf","Included":"y"},
+{"IconName":"fa-legal (alias)","Included":""},
+{"IconName":"fa-lemon-o","Included":"y"},
+{"IconName":"fa-level-down","Included":""},
+{"IconName":"fa-level-up","Included":""},
+{"IconName":"fa-life-bouy (alias)","Included":""},
+{"IconName":"fa-life-buoy (alias)","Included":""},
+{"IconName":"fa-life-ring","Included":"y"},
+{"IconName":"fa-life-saver (alias)","Included":""},
+{"IconName":"fa-lightbulb-o","Included":""},
+{"IconName":"fa-line-chart","Included":""},
+{"IconName":"fa-location-arrow","Included":""},
+{"IconName":"fa-lock","Included":"y"},
+{"IconName":"fa-magic","Included":"y"},
+{"IconName":"fa-magnet","Included":"y"},
+{"IconName":"fa-mail-forward (alias)","Included":""},
+{"IconName":"fa-mail-reply (alias)","Included":""},
+{"IconName":"fa-mail-reply-all (alias)","Included":""},
+{"IconName":"fa-male","Included":"y"},
+{"IconName":"fa-map-marker","Included":"y"},
+{"IconName":"fa-meh-o","Included":""},
+{"IconName":"fa-microphone","Included":"y"},
+{"IconName":"fa-microphone-slash","Included":"y"},
+{"IconName":"fa-minus","Included":""},
+{"IconName":"fa-minus-circle","Included":""},
+{"IconName":"fa-minus-square","Included":""},
+{"IconName":"fa-minus-square-o","Included":""},
+{"IconName":"fa-mobile","Included":"y"},
+{"IconName":"fa-mobile-phone (alias)","Included":""},
+{"IconName":"fa-money","Included":"y"},
+{"IconName":"fa-moon-o","Included":"y"},
+{"IconName":"fa-mortar-board (alias)","Included":""},
+{"IconName":"fa-music","Included":"y"},
+{"IconName":"fa-navicon (alias)","Included":""},
+{"IconName":"fa-newspaper-o","Included":"y"},
+{"IconName":"fa-paint-brush","Included":"y"},
+{"IconName":"fa-paper-plane","Included":""},
+{"IconName":"fa-paper-plane-o","Included":"y"},
+{"IconName":"fa-paw","Included":"y"},
+{"IconName":"fa-pencil","Included":"y"},
+{"IconName":"fa-pencil-square","Included":""},
+{"IconName":"fa-pencil-square-o","Included":""},
+{"IconName":"fa-phone","Included":"y"},
+{"IconName":"fa-phone-square","Included":""},
+{"IconName":"fa-photo (alias)","Included":""},
+{"IconName":"fa-picture-o","Included":"y"},
+{"IconName":"fa-pie-chart","Included":"y"},
+{"IconName":"fa-plane","Included":"y"},
+{"IconName":"fa-plug","Included":"y"},
+{"IconName":"fa-plus","Included":"y"},
+{"IconName":"fa-plus-circle","Included":""},
+{"IconName":"fa-plus-square","Included":""},
+{"IconName":"fa-plus-square-o","Included":""},
+{"IconName":"fa-power-off","Included":"y"},
+{"IconName":"fa-print","Included":"y"},
+{"IconName":"fa-puzzle-piece","Included":"y"},
+{"IconName":"fa-qrcode","Included":"y"},
+{"IconName":"fa-question","Included":"y"},
+{"IconName":"fa-question-circle","Included":""},
+{"IconName":"fa-quote-left","Included":""},
+{"IconName":"fa-quote-right","Included":""},
+{"IconName":"fa-random","Included":""},
+{"IconName":"fa-recycle","Included":"y"},
+{"IconName":"fa-refresh","Included":"y"},
+{"IconName":"fa-remove (alias)","Included":""},
+{"IconName":"fa-reorder (alias)","Included":""},
+{"IconName":"fa-reply","Included":"y"},
+{"IconName":"fa-reply-all","Included":""},
+{"IconName":"fa-retweet","Included":""},
+{"IconName":"fa-road","Included":"y"},
+{"IconName":"fa-rocket","Included":"y"},
+{"IconName":"fa-rss","Included":""},
+{"IconName":"fa-rss-square","Included":""},
+{"IconName":"fa-search","Included":"y"},
+{"IconName":"fa-search-minus","Included":""},
+{"IconName":"fa-search-plus","Included":""},
+{"IconName":"fa-send (alias)","Included":""},
+{"IconName":"fa-send-o (alias)","Included":""},
+{"IconName":"fa-share","Included":""},
+{"IconName":"fa-share-alt","Included":""},
+{"IconName":"fa-share-alt-square","Included":""},
+{"IconName":"fa-share-square","Included":""},
+{"IconName":"fa-share-square-o","Included":""},
+{"IconName":"fa-shield","Included":""},
+{"IconName":"fa-shopping-cart","Included":"y"},
+{"IconName":"fa-sign-in","Included":""},
+{"IconName":"fa-sign-out","Included":""},
+{"IconName":"fa-signal","Included":""},
+{"IconName":"fa-sitemap","Included":"y"},
+{"IconName":"fa-sliders","Included":""},
+{"IconName":"fa-smile-o","Included":"y"},
+{"IconName":"fa-soccer-ball-o (alias)","Included":""},
+{"IconName":"fa-sort","Included":""},
+{"IconName":"fa-sort-alpha-asc","Included":""},
+{"IconName":"fa-sort-alpha-desc","Included":""},
+{"IconName":"fa-sort-amount-asc","Included":""},
+{"IconName":"fa-sort-amount-desc","Included":""},
+{"IconName":"fa-sort-asc","Included":""},
+{"IconName":"fa-sort-desc","Included":""},
+{"IconName":"fa-sort-down (alias)","Included":""},
+{"IconName":"fa-sort-numeric-asc","Included":""},
+{"IconName":"fa-sort-numeric-desc","Included":""},
+{"IconName":"fa-sort-up (alias)","Included":""},
+{"IconName":"fa-space-shuttle","Included":""},
+{"IconName":"fa-spinner","Included":""},
+{"IconName":"fa-spoon","Included":"y"},
+{"IconName":"fa-square","Included":""},
+{"IconName":"fa-square-o","Included":""},
+{"IconName":"fa-star","Included":"y"},
+{"IconName":"fa-star-half","Included":"y"},
+{"IconName":"fa-star-half-empty (alias)","Included":""},
+{"IconName":"fa-star-half-full (alias)","Included":""},
+{"IconName":"fa-star-half-o","Included":""},
+{"IconName":"fa-star-o","Included":""},
+{"IconName":"fa-suitcase","Included":"y"},
+{"IconName":"fa-sun-o","Included":"y"},
+{"IconName":"fa-support (alias)","Included":""},
+{"IconName":"fa-tablet","Included":"y"},
+{"IconName":"fa-tachometer","Included":"y"},
+{"IconName":"fa-tag","Included":""},
+{"IconName":"fa-tags","Included":"y"},
+{"IconName":"fa-tasks","Included":""},
+{"IconName":"fa-taxi","Included":"y"},
+{"IconName":"fa-terminal","Included":""},
+{"IconName":"fa-thumb-tack","Included":""},
+{"IconName":"fa-thumbs-down","Included":""},
+{"IconName":"fa-thumbs-o-down","Included":""},
+{"IconName":"fa-thumbs-o-up","Included":""},
+{"IconName":"fa-thumbs-up","Included":""},
+{"IconName":"fa-ticket","Included":"y"},
+{"IconName":"fa-times","Included":""},
+{"IconName":"fa-times-circle","Included":"y"},
+{"IconName":"fa-times-circle-o","Included":""},
+{"IconName":"fa-tint","Included":""},
+{"IconName":"fa-toggle-down (alias)","Included":""},
+{"IconName":"fa-toggle-left (alias)","Included":""},
+{"IconName":"fa-toggle-off","Included":""},
+{"IconName":"fa-toggle-on","Included":""},
+{"IconName":"fa-toggle-right (alias)","Included":""},
+{"IconName":"fa-toggle-up (alias)","Included":""},
+{"IconName":"fa-trash","Included":"y"},
+{"IconName":"fa-trash-o","Included":""},
+{"IconName":"fa-tree","Included":"y"},
+{"IconName":"fa-trophy","Included":"y"},
+{"IconName":"fa-truck","Included":"y"},
+{"IconName":"fa-tty","Included":""},
+{"IconName":"fa-umbrella","Included":"y"},
+{"IconName":"fa-university","Included":"y"},
+{"IconName":"fa-unlock","Included":"y"},
+{"IconName":"fa-unlock-alt","Included":""},
+{"IconName":"fa-unsorted (alias)","Included":""},
+{"IconName":"fa-upload","Included":""},
+{"IconName":"fa-user","Included":""},
+{"IconName":"fa-users","Included":"y"},
+{"IconName":"fa-video-camera","Included":"y"},
+{"IconName":"fa-volume-down","Included":"y"},
+{"IconName":"fa-volume-off","Included":"y"},
+{"IconName":"fa-volume-up","Included":"y"},
+{"IconName":"fa-warning (alias)","Included":""},
+{"IconName":"fa-wheelchair","Included":"y"},
+{"IconName":"fa-wifi","Included":"y"},
+{"IconName":"fa-wrench","Included":"y"},
+{"IconName":"fa-file","Included":""},
+{"IconName":"fa-file-archive-o","Included":""},
+{"IconName":"fa-file-audio-o","Included":""},
+{"IconName":"fa-file-code-o","Included":""},
+{"IconName":"fa-file-excel-o","Included":""},
+{"IconName":"fa-file-image-o","Included":""},
+{"IconName":"fa-file-movie-o (alias)","Included":""},
+{"IconName":"fa-file-o","Included":""},
+{"IconName":"fa-file-pdf-o","Included":""},
+{"IconName":"fa-file-photo-o (alias)","Included":""},
+{"IconName":"fa-file-picture-o (alias)","Included":""},
+{"IconName":"fa-file-powerpoint-o","Included":""},
+{"IconName":"fa-file-sound-o (alias)","Included":""},
+{"IconName":"fa-file-text","Included":""},
+{"IconName":"fa-file-text-o","Included":""},
+{"IconName":"fa-file-video-o","Included":""},
+{"IconName":"fa-file-word-o","Included":""},
+{"IconName":"fa-file-zip-o (alias)","Included":""},
+{"IconName":"fa-circle-o-notch","Included":""},
+{"IconName":"fa-cog","Included":""},
+{"IconName":"fa-gear (alias)","Included":""},
+{"IconName":"fa-refresh","Included":"y"},
+{"IconName":"fa-spinner","Included":""},
+{"IconName":"fa-check-square","Included":""},
+{"IconName":"fa-check-square-o","Included":""},
+{"IconName":"fa-circle","Included":""},
+{"IconName":"fa-circle-o","Included":""},
+{"IconName":"fa-dot-circle-o","Included":""},
+{"IconName":"fa-minus-square","Included":""},
+{"IconName":"fa-minus-square-o","Included":""},
+{"IconName":"fa-plus-square","Included":""},
+{"IconName":"fa-plus-square-o","Included":""},
+{"IconName":"fa-square","Included":""},
+{"IconName":"fa-square-o","Included":""},
+{"IconName":"fa-cc-amex","Included":""},
+{"IconName":"fa-cc-discover","Included":""},
+{"IconName":"fa-cc-mastercard","Included":""},
+{"IconName":"fa-cc-paypal","Included":""},
+{"IconName":"fa-cc-stripe","Included":""},
+{"IconName":"fa-cc-visa","Included":""},
+{"IconName":"fa-credit-card","Included":""},
+{"IconName":"fa-google-wallet","Included":""},
+{"IconName":"fa-paypal","Included":""},
+{"IconName":"fa-area-chart","Included":""},
+{"IconName":"fa-bar-chart","Included":""},
+{"IconName":"fa-bar-chart-o (alias)","Included":""},
+{"IconName":"fa-line-chart","Included":""},
+{"IconName":"fa-pie-chart","Included":""},
+{"IconName":"fa-bitcoin (alias)","Included":""},
+{"IconName":"fa-btc","Included":""},
+{"IconName":"fa-cny (alias)","Included":""},
+{"IconName":"fa-dollar (alias)","Included":""},
+{"IconName":"fa-eur","Included":""},
+{"IconName":"fa-euro (alias)","Included":""},
+{"IconName":"fa-gbp","Included":""},
+{"IconName":"fa-ils","Included":""},
+{"IconName":"fa-inr","Included":""},
+{"IconName":"fa-jpy","Included":""},
+{"IconName":"fa-krw","Included":""},
+{"IconName":"fa-money","Included":"y"},
+{"IconName":"fa-rmb (alias)","Included":""},
+{"IconName":"fa-rouble (alias)","Included":""},
+{"IconName":"fa-rub","Included":""},
+{"IconName":"fa-ruble (alias)","Included":""},
+{"IconName":"fa-rupee (alias)","Included":""},
+{"IconName":"fa-shekel (alias)","Included":""},
+{"IconName":"fa-sheqel (alias)","Included":""},
+{"IconName":"fa-try","Included":""},
+{"IconName":"fa-turkish-lira (alias)","Included":""},
+{"IconName":"fa-usd","Included":""},
+{"IconName":"fa-won (alias)","Included":""},
+{"IconName":"fa-yen (alias)","Included":""},
+{"IconName":"fa-align-center","Included":""},
+{"IconName":"fa-align-justify","Included":""},
+{"IconName":"fa-align-left","Included":""},
+{"IconName":"fa-align-right","Included":""},
+{"IconName":"fa-bold","Included":""},
+{"IconName":"fa-chain (alias)","Included":""},
+{"IconName":"fa-chain-broken","Included":""},
+{"IconName":"fa-clipboard","Included":""},
+{"IconName":"fa-columns","Included":""},
+{"IconName":"fa-copy (alias)","Included":""},
+{"IconName":"fa-cut (alias)","Included":""},
+{"IconName":"fa-dedent (alias)","Included":""},
+{"IconName":"fa-eraser","Included":""},
+{"IconName":"fa-file","Included":""},
+{"IconName":"fa-file-o","Included":""},
+{"IconName":"fa-file-text","Included":""},
+{"IconName":"fa-file-text-o","Included":""},
+{"IconName":"fa-files-o","Included":""},
+{"IconName":"fa-floppy-o","Included":""},
+{"IconName":"fa-font","Included":""},
+{"IconName":"fa-header","Included":""},
+{"IconName":"fa-indent","Included":""},
+{"IconName":"fa-italic","Included":""},
+{"IconName":"fa-link","Included":""},
+{"IconName":"fa-list","Included":""},
+{"IconName":"fa-list-alt","Included":""},
+{"IconName":"fa-list-ol","Included":""},
+{"IconName":"fa-list-ul","Included":""},
+{"IconName":"fa-outdent","Included":""},
+{"IconName":"fa-paperclip","Included":"y"},
+{"IconName":"fa-paragraph","Included":""},
+{"IconName":"fa-paste (alias)","Included":""},
+{"IconName":"fa-repeat","Included":""},
+{"IconName":"fa-rotate-left (alias)","Included":""},
+{"IconName":"fa-rotate-right (alias)","Included":""},
+{"IconName":"fa-save (alias)","Included":""},
+{"IconName":"fa-scissors","Included":"y"},
+{"IconName":"fa-strikethrough","Included":""},
+{"IconName":"fa-subscript","Included":""},
+{"IconName":"fa-superscript","Included":""},
+{"IconName":"fa-table","Included":"y"},
+{"IconName":"fa-text-height","Included":""},
+{"IconName":"fa-text-width","Included":""},
+{"IconName":"fa-th","Included":""},
+{"IconName":"fa-th-large","Included":""},
+{"IconName":"fa-th-list","Included":""},
+{"IconName":"fa-underline","Included":""},
+{"IconName":"fa-undo","Included":""},
+{"IconName":"fa-unlink (alias)","Included":""},
+{"IconName":"fa-angle-double-down","Included":""},
+{"IconName":"fa-angle-double-left","Included":""},
+{"IconName":"fa-angle-double-right","Included":""},
+{"IconName":"fa-angle-double-up","Included":""},
+{"IconName":"fa-angle-down","Included":""},
+{"IconName":"fa-angle-left","Included":""},
+{"IconName":"fa-angle-right","Included":""},
+{"IconName":"fa-angle-up","Included":""},
+{"IconName":"fa-arrow-circle-down","Included":""},
+{"IconName":"fa-arrow-circle-left","Included":""},
+{"IconName":"fa-arrow-circle-o-down","Included":""},
+{"IconName":"fa-arrow-circle-o-left","Included":""},
+{"IconName":"fa-arrow-circle-o-right","Included":""},
+{"IconName":"fa-arrow-circle-o-up","Included":""},
+{"IconName":"fa-arrow-circle-right","Included":""},
+{"IconName":"fa-arrow-circle-up","Included":""},
+{"IconName":"fa-arrow-down","Included":""},
+{"IconName":"fa-arrow-left","Included":""},
+{"IconName":"fa-arrow-right","Included":""},
+{"IconName":"fa-arrow-up","Included":""},
+{"IconName":"fa-arrows","Included":""},
+{"IconName":"fa-arrows-alt","Included":""},
+{"IconName":"fa-arrows-h","Included":""},
+{"IconName":"fa-arrows-v","Included":""},
+{"IconName":"fa-caret-down","Included":""},
+{"IconName":"fa-caret-left","Included":""},
+{"IconName":"fa-caret-right","Included":""},
+{"IconName":"fa-caret-square-o-down","Included":""},
+{"IconName":"fa-caret-square-o-left","Included":""},
+{"IconName":"fa-caret-square-o-right","Included":""},
+{"IconName":"fa-caret-square-o-up","Included":""},
+{"IconName":"fa-caret-up","Included":""},
+{"IconName":"fa-chevron-circle-down","Included":""},
+{"IconName":"fa-chevron-circle-left","Included":""},
+{"IconName":"fa-chevron-circle-right","Included":""},
+{"IconName":"fa-chevron-circle-up","Included":""},
+{"IconName":"fa-chevron-down","Included":""},
+{"IconName":"fa-chevron-left","Included":""},
+{"IconName":"fa-chevron-right","Included":""},
+{"IconName":"fa-chevron-up","Included":""},
+{"IconName":"fa-hand-o-down","Included":""},
+{"IconName":"fa-hand-o-left","Included":""},
+{"IconName":"fa-hand-o-right","Included":""},
+{"IconName":"fa-hand-o-up","Included":""},
+{"IconName":"fa-long-arrow-down","Included":""},
+{"IconName":"fa-long-arrow-left","Included":""},
+{"IconName":"fa-long-arrow-right","Included":""},
+{"IconName":"fa-long-arrow-up","Included":""},
+{"IconName":"fa-toggle-down (alias)","Included":""},
+{"IconName":"fa-toggle-left (alias)","Included":""},
+{"IconName":"fa-toggle-right (alias)","Included":""},
+{"IconName":"fa-toggle-up (alias)","Included":""},
+{"IconName":"fa-arrows-alt","Included":""},
+{"IconName":"fa-backward","Included":""},
+{"IconName":"fa-compress","Included":""},
+{"IconName":"fa-eject","Included":""},
+{"IconName":"fa-expand","Included":""},
+{"IconName":"fa-fast-backward","Included":""},
+{"IconName":"fa-fast-forward","Included":""},
+{"IconName":"fa-forward","Included":""},
+{"IconName":"fa-pause","Included":""},
+{"IconName":"fa-play","Included":""},
+{"IconName":"fa-play-circle","Included":""},
+{"IconName":"fa-play-circle-o","Included":""},
+{"IconName":"fa-step-backward","Included":""},
+{"IconName":"fa-step-forward","Included":""},
+{"IconName":"fa-stop","Included":""},
+{"IconName":"fa-youtube-play","Included":""},
+{"IconName":"fa-adn","Included":""},
+{"IconName":"fa-android","Included":""},
+{"IconName":"fa-angellist","Included":""},
+{"IconName":"fa-apple","Included":""},
+{"IconName":"fa-behance","Included":""},
+{"IconName":"fa-behance-square","Included":""},
+{"IconName":"fa-bitbucket","Included":""},
+{"IconName":"fa-bitbucket-square","Included":""},
+{"IconName":"fa-bitcoin (alias)","Included":""},
+{"IconName":"fa-btc","Included":""},
+{"IconName":"fa-cc-amex","Included":""},
+{"IconName":"fa-cc-discover","Included":""},
+{"IconName":"fa-cc-mastercard","Included":""},
+{"IconName":"fa-cc-paypal","Included":""},
+{"IconName":"fa-cc-stripe","Included":""},
+{"IconName":"fa-cc-visa","Included":""},
+{"IconName":"fa-codepen","Included":""},
+{"IconName":"fa-css3","Included":""},
+{"IconName":"fa-delicious","Included":""},
+{"IconName":"fa-deviantart","Included":""},
+{"IconName":"fa-digg","Included":""},
+{"IconName":"fa-dribbble","Included":""},
+{"IconName":"fa-dropbox","Included":""},
+{"IconName":"fa-drupal","Included":""},
+{"IconName":"fa-empire","Included":""},
+{"IconName":"fa-facebook","Included":""},
+{"IconName":"fa-facebook-square","Included":""},
+{"IconName":"fa-flickr","Included":""},
+{"IconName":"fa-foursquare","Included":""},
+{"IconName":"fa-ge (alias)","Included":""},
+{"IconName":"fa-git","Included":""},
+{"IconName":"fa-git-square","Included":""},
+{"IconName":"fa-github","Included":""},
+{"IconName":"fa-github-alt","Included":""},
+{"IconName":"fa-github-square","Included":""},
+{"IconName":"fa-gittip","Included":""},
+{"IconName":"fa-google","Included":""},
+{"IconName":"fa-google-plus","Included":""},
+{"IconName":"fa-google-plus-square","Included":""},
+{"IconName":"fa-google-wallet","Included":""},
+{"IconName":"fa-hacker-news","Included":""},
+{"IconName":"fa-html5","Included":""},
+{"IconName":"fa-instagram","Included":""},
+{"IconName":"fa-ioxhost","Included":""},
+{"IconName":"fa-joomla","Included":""},
+{"IconName":"fa-jsfiddle","Included":""},
+{"IconName":"fa-lastfm","Included":""},
+{"IconName":"fa-lastfm-square","Included":""},
+{"IconName":"fa-linkedin","Included":""},
+{"IconName":"fa-linkedin-square","Included":""},
+{"IconName":"fa-linux","Included":""},
+{"IconName":"fa-maxcdn","Included":""},
+{"IconName":"fa-meanpath","Included":""},
+{"IconName":"fa-openid","Included":""},
+{"IconName":"fa-pagelines","Included":""},
+{"IconName":"fa-paypal","Included":""},
+{"IconName":"fa-pied-piper","Included":""},
+{"IconName":"fa-pied-piper-alt","Included":""},
+{"IconName":"fa-pinterest","Included":""},
+{"IconName":"fa-pinterest-square","Included":""},
+{"IconName":"fa-qq","Included":""},
+{"IconName":"fa-ra (alias)","Included":""},
+{"IconName":"fa-rebel","Included":""},
+{"IconName":"fa-reddit","Included":""},
+{"IconName":"fa-reddit-square","Included":""},
+{"IconName":"fa-renren","Included":""},
+{"IconName":"fa-share-alt","Included":""},
+{"IconName":"fa-share-alt-square","Included":""},
+{"IconName":"fa-skype","Included":""},
+{"IconName":"fa-slack","Included":""},
+{"IconName":"fa-slideshare","Included":""},
+{"IconName":"fa-soundcloud","Included":""},
+{"IconName":"fa-spotify","Included":""},
+{"IconName":"fa-stack-exchange","Included":""},
+{"IconName":"fa-stack-overflow","Included":""},
+{"IconName":"fa-steam","Included":""},
+{"IconName":"fa-steam-square","Included":""},
+{"IconName":"fa-stumbleupon","Included":""},
+{"IconName":"fa-stumbleupon-circle","Included":""},
+{"IconName":"fa-tencent-weibo","Included":""},
+{"IconName":"fa-trello","Included":""},
+{"IconName":"fa-tumblr","Included":""},
+{"IconName":"fa-tumblr-square","Included":""},
+{"IconName":"fa-twitch","Included":""},
+{"IconName":"fa-twitter","Included":""},
+{"IconName":"fa-twitter-square","Included":""},
+{"IconName":"fa-vimeo-square","Included":""},
+{"IconName":"fa-vine","Included":""},
+{"IconName":"fa-vk","Included":""},
+{"IconName":"fa-wechat (alias)","Included":""},
+{"IconName":"fa-weibo","Included":""},
+{"IconName":"fa-weixin","Included":""},
+{"IconName":"fa-windows","Included":""},
+{"IconName":"fa-wordpress","Included":""},
+{"IconName":"fa-xing","Included":""},
+{"IconName":"fa-xing-square","Included":""},
+{"IconName":"fa-yahoo","Included":""},
+{"IconName":"fa-yelp","Included":""},
+{"IconName":"fa-youtube","Included":""},
+{"IconName":"fa-youtube-play","Included":""},
+{"IconName":"fa-youtube-square","Included":""},
+{"IconName":"fa-ambulance","Included":""},
+{"IconName":"fa-h-square","Included":""},
+{"IconName":"fa-hospital-o","Included":"y"},
+{"IconName":"fa-medkit","Included":"y"},
+{"IconName":"fa-plus-square","Included":"y"},
+{"IconName":"fa-stethoscope","Included":"y"},
+{"IconName":"fa-user-md","Included":"y"},
+{"IconName":"fa-wheelchair","Included":"y"}]
+		
+	//	alert(data[1].IconName);
+	
+	var selectedIcons =[];
+	
+function loadData(){
+		var string ="";
+		for(i in data){
+			if (data[i].Included ==='y')
+			{
+				string = data[i].IconName;
+				selectedIcons.push(string);
+				//data[i].IconName})
+			}
+		}
+			}
+			loadData();
+		
+		
+		var selectedIconString;
+		function buttonPressRandomIcon()
+		{
+			
+			var selected = Math.floor(Math.random() * (selectedIcons.length));
+			var part1 ='<i  class="fa ';
+			selectedIconString =selectedIcons[selected];
+			var part3 = '"></i>';
+			//alert(part2);
+			if(selectedIcons.length===0)
+			{
+				selectedIconString="fa-refresh";
+			loadData();
+			}
+			document.getElementById("idIPlaceholder").innerHTML = part1+selectedIconString+" fa-fw"+part3;
+			document.getElementById('idButtonIcon').style.backgroundColor =theNextColor();
+			
+			var input =selectedIconString;
+			var inputclear = selectedIconString.substring(3);
+			inputclear =inputclear.replace(/-o|-/g,' ');
+			document.getElementById('idButtonIcon').title =inputclear;
+			
+			selectedIcons.splice(selected, 1);
+		//	alert()
+	//	console.log(typeof selected);
+			//alert(selectedIcons.length);
+		}
+		
+		function buttonPressRightClick()
+		{
+			
+			var input =selectedIconString;
+			var inputclear = selectedIconString.substring(3);
+			inputclear =inputclear.replace(/-o|-/g,' ');
+		//	alert(inputclear);
+			replace.replaceWordST(theURLs,/StudyTopic/g,inputclear);
+			
+			//alert('r');
+			openURLs();
+		}
+		
+		
+		window.colorArrayPosition = 0;
+function theNextColor(){
+	var arrayColors = ["aff","faf","ffa","faa","afa","aaf","aac","caa","aca","cca","acc","cac","dff","fdf","ffd","daf","fda","afd","dfa","adf","fad"];
+	var theColor = "#"+arrayColors[colorArrayPosition];
+		colorArrayPosition++;
+	if(colorArrayPosition===arrayColors.length)
+	{
+		colorArrayPosition=0;
+	}
+	return theColor;
+}
+
+
+
+var theURLs = [];
+function loadURLs()
+{
+theURLs.push({name:'Wikipedia',url:"http://en.wikipedia.org/wiki/StudyTopic",details:''});	
+theURLs.push({name:'Yahoo',url:'https://search.yahoo.com/search?n=100&p=%22StudyTopic%22',details:''});
+theURLs.push({name:'Flickr:',url:'https://www.flickr.com/search/?q=StudyTopic',details:''});
+theURLs.push({name:'Google News:',url:'https://www.google.com/?gws_rd=ssl#newwindow=1&tbm=nws&q=%22StudyTopic%22',details:''});
+theURLs.push({name:'Pinterest:',url:'http://www.pinterest.com/search/pins/?q=StudyTopic',details:''});
+theURLs.push({name:'Reddit:',url:'http://www.reddit.com/search?q=%22StudyTopic%22',details:''});
+theURLs.push({name:'Twitter:',url:'https://twitter.com/search?q=StudyTopic',details:''});
+theURLs.push({name:'Youtube:',url:'https://www.youtube.com/results?search_query=%22StudyTopic%22',details:''});
+theURLs.push({name:'WikiDictionary:',url:'http://en.wiktionary.org/wiki/StudyTopic',details:''});
+theURLs.push({name:'Google: lesson plan',url:'https://www.google.com/webhp?#q=%7EStudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx',details:''});
+theURLs.push({name:'Google: worksheet',url:'https://www.google.com/webhp?#q=%7E%22StudyTopic%22+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx',details:''});
+theURLs.push({name:'Download: lesson plan',url:'https://www.google.com/webhp?#q=%22StudyTopic%22+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I',details:''});
+theURLs.push({name:'Download: worksheet',url:'https://www.google.com/webhp?#q=StudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I',details:''});
+theURLs.push({name:'Sharemylesson',url:'http://www.sharemylesson.com/TaxonomySearchResults.aspx?area=resources&keywords=StudyTopic',details:''});
+theURLs.push({name:'Bing: lesson plan',url:'https://www.bing.com/search?q=%22StudyTopic%22+%22lesson+plan%22+filetype%3Apdf+%7C+filetype%3Adoc+%7C+filetype%3Adocx+%7C+filetype%3Appt++%7C+filetype%3Apptx++&go=Submit&qs=n&form=QBRE&pq=%22reading%22+%22lesson+plan%22+filetype%3Apdf+%7C+filetype%3Adoc+%7C+filetype%3Adocx+%7C+filetype%3Appt+%7C+filetype%3Apptx',details:''});
+theURLs.push({name:'Yandex: lesson plan',url:'https://www.yandex.com/yandsearch?text=%22StudyTopic%22%22lesson%20plan%22%20&lr=87&lang=en&mime=pdf&mime=rtf&mime=doc&mime=ppt&mime=docx&mime=pptx&mime=odt&mime=odp&csg=0%2C447%2C29%2C1%2C0%2C0%2C0',details:''});	
+}
+loadURLs();
+
+
+function addURLsToPlan()
+{	
+	var theFinal="";
+//	i=0;
+for(i in theURLs) {
+var part1 ='<a href="';
+var part2 =theURLs[i].url;
+var part3= '" contenteditable="true" title="';
+var part4= theURLs[i].name;
+var part5='" class="exlink" target="_blank">';
+var part6=theURLs[i].name +" "+theURLs[i].url;
+var part7= '</a><br>';
+var collect= part1+part2+part3+part4+part5+part6+part7;
+//alert(theFinal);
+theFinal=theFinal+collect;
+		}
+		//alert('hi');
+		document.getElementById('idSpanTheURLs').innerHTML = theFinal;
+}
+
+
+
+var replace = {
+replaceWordST: function (theArray,valueToReplace,valueNew) {
+	if(valueNew ==="")
+	{return;}
+jsonData = theArray;
+for (var obj in jsonData) {
+    if (jsonData.hasOwnProperty(obj)) {
+        for (var prop in jsonData[obj]) {
+            if (jsonData[obj].hasOwnProperty(prop)) {
+                jsonData[obj][prop] = replace.name(jsonData[obj][prop], valueToReplace, valueNew);
+            }
+        }
+    }
+}
+return jsonData;
+},
+name: function (name, valueToReplace, valueNew) {
+return name.replace(valueToReplace, valueNew);
+}
+}
+
+
+
+function openURLs()
+{
+for(i=0;i<theURLs.length;i++){
+	window.open(theURLs[i].url);
+}
+}
+</script>	
+	</head>
+	
+	
+	
+	
+	<body>
+		<div id="idDivBodyWrapper" style="position:relative;height:100%;background:lightgreen;">
+		<div style="position:absolute;display:inline;float:left;left:0;top:0;clear:both;"><button class="btn btn-default btn-lg" style="opacity:1;background:transparent;font-family:courier;font-weight:bold;" onclick="location.href='http://vqplan.com';"><i style="color:black;opacity:1;" class="fa fa-th fa-fw fa-5x"></i><br><span style="opacity:1;color:black">home</span></button></div>
+		
+		<table style="width:100%;height:100%;padding:2%;"><tr><td style="vertical-align: middle; text-align: center">
+<button  id="idButtonIcon" style="font-size: 75vmin;border:0;margin:0;" type="button" title=""  onClick="buttonPressRandomIcon();" oncontextmenu="buttonPressRightClick();"  >&nbsp;<span id="idIPlaceholder"><i  class="fa fa-random"></i></span>&nbsp;</button>
+   </td></tr></table>
+
+		
+		</div><!--end idDivBodyWrapper-->
+	</body>
+	
+	
+</html>

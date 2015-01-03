@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<link href="/font-awesome.min.css" rel="stylesheet">
+	<title>loading....</title>
+	<style>
+		body,html
+		{
+			font-family: courier;
+			height:100%;
+			margin:0;
+			padding: 0;
+		}
+		#idDivBodyWrapper
+		{
+			height: 100%;
+			background: lightgray;
+		}
+		
+	
+
+		
+		
+			#idSpanSpinner
+		{
+			font-size:10vh;
+			visibility: visible;
+					transition: color 4.75s ease-in-out;
+-moz-transition: color 4.75s ease-in-out;
+-webkit-transition: color 4.75s ease-in-out;
+		}
+		
+		#idSpanSpinner:hover
+		{
+			color:transparent;
+			transition: color 4.75s ease-in-out;
+-moz-transition: color 4.75s ease-in-out;
+-webkit-transition: color 4.75s ease-in-out;
+		}
+		
+		
+			.idReveal
+		{color:transparent;font-size:10vh;
+			transition: color 4.75s ease-in-out;
+-moz-transition: color 4.75s ease-in-out;
+-webkit-transition: color 4.75s ease-in-out;
+		}
+		
+		
+		
+	
+
+		
+		#idSpinner
+		{
+			font-size:30vh;color:darkgray;
+			transition: color 4.75s ease-in-out;
+-moz-transition: color 4.75s ease-in-out;
+-webkit-transition: color 4.75s ease-in-out;
+		}
+		
+		#idSpinner:hover
+		{
+			color:transparent;
+			transition: color 5.75s ease-in-out;
+-moz-transition: color 5.75s ease-in-out;
+-webkit-transition: color 5.75s ease-in-out;
+		}
+		
+		#idSpinner:hover~.idReveal{color:black;
+						transition: color 4.75s ease-in-out;
+-moz-transition: color 4.75s ease-in-out;
+-webkit-transition: color 4.75s ease-in-out;
+
+		}
+		
+		
+		</style>
+</head>
+
+
+<body>
+	<div id="idDivBodyWrapper">
+		<div style="position:absolute;display:block;float:left;left:0;Top:0"><button class="btn btn-default btn-lg" style="opacity:1;background:transparent;font-family:courier;font-weight:bold;" onclick="location.href='http://vqplan.com';"><i style="color:darkblue;opacity:.5;" class="fa fa-th fa-fw fa-5x"></i><br><span style="opacity:1;">home</span></button></div>
+		
+		
+	 <table style="width:100%; height:100%;"><tr><td style="vertical-align:middle; text-align: center">
+<span id="idSpanSpinner" >The user experience here</span><br><i id="idSpinner" class="fa fa-spinner fa-spin"></i>
+<br><br>
+<span class="idReveal" >sets an aspiration</span>
+<br>
+
+	</td></tr></table>
+	</div>
+	
+	
+</body>
+
+</html>
