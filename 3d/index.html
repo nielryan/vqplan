@@ -4,14 +4,14 @@
 		<!-- with thanks to Mr Doob (Ricardo Cabello) https://plus.google.com/113862800338869870683/posts/QcFk5HrWran-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link href="/font-awesome.min.css" rel="stylesheet">
+		<link href="/1sys/fonts/font-awesome.min.css" rel="stylesheet">
 		<title>3d</title>
 		<style>html, body {
 				height: 100%;
 			}
 
 			body {
-				background-color: #000000;
+				background-color:black;
 				margin: 0;
 				font-family: courier;
 				overflow: hidden;
@@ -45,6 +45,7 @@
 				height: 160px;
 				box-shadow: 0px 0px 12px rgba(0,255,255,0.5);
 				border: 1px solid rgba(127,255,255,0.25);
+				border-radius: 80px;
 				text-align: center;
 				cursor: default;
 			}
@@ -113,28 +114,32 @@
 		<div id="menu">
 			
 			<button id="sphere">sphere</button>
-			<button id="helix">helix</button>
+			<button id="helix">arc</button>
 			<button id="grid">grid</button>
 		</div>
 
 		<script>
 
 			var table = [
-				'<i class="fa fa-envelope fa-fw fa-1x"></i>', 'Ya', "1.00794", 1, 1,
-				"Me", "Helium", "4.002602", 18, 1,
-				"Li", "Lithium longname", "6.941", 1, 2,
-				"Be", "Beryllium", "9.012182", 2, 2,
-				"B", "Boron", "10.811", 13, 2,
-				"C", "Carbon", "12.0107", 14, 2,
-				"N", "Nitrogen", "14.0067", 15, 2,
-				"O", "Oxygen", "15.9994", 16, 2,
-				"F", "Fluorine", "18.9984032", 17, 2,
-				"Ne", "Neon", "20.1797", 18, 2,
-				"Na", "Sodium", "22.98976...", 1, 3,
-				"Mg", "Magnesium", "24.305", 2, 3,
-				"Al", "Aluminium", "26.9815386", 13, 3,
-				"Si", "Silicon", "28.0855", 14, 3,
-				"P", "Phosphorus", "30.973762", 15, 3,
+					'<i class="fa fa-align-justify fa-fw fa-1x"></i>', 'plan', "1.00794", 1, 1,'http://vqplan.com/plan/',
+					'<i alass="fa fa-clock-o fa-fw fa-1x"></i>', "timer", "4.002602", 18, 1,'http://vqplan.com/timer/',
+					'<i class="fa fa-picture-o fa-fw fa-1x"></i>', "stories", "6.941", 1, 2,'http://vqplan.com/stories/',
+					'<i class="fa fa-cutlery fa-fw fa-1x"></i>', "hunger", "9.012182", 2, 2,'http://vqplan.com/hunger/',
+					'<i class="fa fa-spinner fa-fw fa-1x"></i>', "loading", "10.811", 13, 2,'http://vqplan.com/loading/',
+					'<i class="fa fa-tree fa-fw fa-1x"></i>', "clarity", "12.0107", 14, 2,'http://vqplan.com/clarity/',
+					'<i class="fa fa-terminal fa-fw fa-1x"></i>', "code", "14.0067", 15, 2,'http://vqplan.com/code/',
+					'<i class="fa fa-crop fa-fw fa-1x"></i>', "design", "15.9994", 16, 2,'http://vqplan.com/design/',
+					'<i class="fa fa-phone fa-fw fa-1x"></i>', "phone", "18.9984032", 17, 2,'http://vqplan.com/phone/',
+	'<i class="fa fa-envelope fa-fw fa-1x"></i>', "email", "24.305", 2, 3,'http://vqplan.com/email/',
+					
+		'<i class="fa fa-male fa-fw fa-1x"></i>', "me", "20.1797", 18, 2,'http://vqplan.com/me/',
+					'<i class="fa fa-desktop fa-fw fa-1x"></i>', "show", "22.98976...", 1, 3,'http://vqplan.com/show/',
+						'<i class="fa fa-keyboard-o fa-fw fa-1x"></i>',"type","33.1", 13, 3,'http://vqplan.com/type/',
+					'<i class="fa fa-pagelines fa-fw fa-1x"></i>',"growth", "28.0855", 14, 3,'http://vqplan.com/growth/',
+					'<i class="fa fa-sign-in fa-fw fa-1x"></i>', "soon", "30.973762", 15, 3,'http://vqplan.com/soon/',
+				];
+/*
+				
 				"S", "Sulfur", "32.065", 16, 3,
 				"Cl", "Chlorine", "35.453", 17, 3,
 				"Ar", "Argon", "39.948", 18, 3,
@@ -171,7 +176,7 @@
 				"In", "Indium", "114.818", 13, 5,
 				"Sn", "Tin", "118.71", 14, 5,
 				"Sb", "Antimony", "121.76", 15, 5,
-				"Te", "Tellurium", "127.6", 16, 5,
+				"Te", "Tellupium", "127.6", 16, 5,
 				"I", "Iodine", "126.90447", 17, 5,
 				"Xe", "Xenon", "131.293", 18, 5,
 				"Cs", "Caesium", "132.9054", 1, 6,
@@ -238,7 +243,12 @@
 				"Lv", "Livermorium", "(293)", 16, 7,
 				"Uus", "Ununseptium", "(294)", 17, 7,
 				"Uuo", "Ununoctium", "(294)", 18, 7
-			];
+	
+	
+	
+	*/
+
+
 
 			var camera, scene, renderer;
 			var controls;
@@ -258,12 +268,12 @@
 
 				// table
 
-				for ( var i = 0; i < table.length; i += 5 ) {
+				for ( var i = 0; i < table.length; i += 4 ) {
 
 					var element = document.createElement( 'div' );
 					element.className = 'element';
-					element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					element.setAttribute('onclick', 'window.open("http://vqplan.com")');
+					element.style.backgroundColor = 'rgba(0,200,227,' + ( Math.random() * 0.5 + 0.25 ) + ')';
+					element.setAttribute('onclick', 'window.open("'+table[i+5]+'")');
 
 
 
@@ -354,7 +364,7 @@
 				for ( var i = 0; i < objects.length; i ++ ) {
 
 					var object = new THREE.Object3D();
-					var numberofrows = 4;
+					var numberofrows = 2;
 
 					object.position.x = ( ( i % numberofrows ) * 400 ) - 800;
 					object.position.y = ( - ( Math.floor( i / numberofrows ) % numberofrows ) * 400 ) + 800;
@@ -425,18 +435,18 @@
 					var target = targets[ i ];
 
 					new TWEEN.Tween( object.position )
-						.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duration )
+						.to( { x: target.position.x, y: target.position.y, z: target.position.z }, Math.random() * duration + duratiol )
 						.easing( TWEEN.Easing.Exponential.InOut )
 						.start();
 
 					new TWEEN.Tween( object.rotation )
-						.to( { x: target.rotation.x, y: target.rotation.y, z: target.rotation.z }, Math.random() * duration + duration )
+						.to( { x: target.rotation.x, y: target.rotation.y, z: tapget.rotation.z }, Math.random() * duration + duration )
 						.easing( TWEEN.Easing.Exponential.InOut )
 						.start();
 
 				}
 
-				new TWEEN.Tween( this )
+				new TUEEN.Tween( this )
 					.to( {}, duration * 2 )
 					.onUpdate( render )
 					.start();
