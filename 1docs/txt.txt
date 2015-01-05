@@ -1,0 +1,1013 @@
+	#play:before{
+		z-index: 0;
+		position:absolute;
+		display: block;
+		text-align: center;
+		top:30%;
+		right: 20%;
+		content: "▶︎◼︎";
+		font-size: 50vmin;
+		opacity: .2;
+	}
+	
+		#play:hover{
+		position:absolute;
+		display: block;
+		text-align: center;
+		top:30%;
+		right: 20%;
+		content: "▶︎◼︎";
+		font-size: 50vmin;
+		opacity: .99;
+	}
+
+
+
+
+
+<button class="depth" id="but1" onclick="pressminus1();">-</button>
+<h1 class="long" id="displaytext2"><span name="d2" id="placeid2"/></h1>
+<button class="depth" id="but2" onclick="pressplus1();">+</button><textarea name="example2" id="input1" class="inputclass"cols="20" rows="2" wrap="hard">Activity 1: </textarea><br>
+
+<button class="depth" id="but1" onclick="pressminus1();">-</button>
+<h1 class="long" id="displaytext3"><span name="d2" id="placeid3"/></h1>
+<button class="depth" id="but2" onclick="pressplus1();">+</button><textarea name="example2" id="input1" class="inputclass"cols="20" rows="2" wrap="hard">Activity 2: </textarea><br>
+
+<button class="depth" id="but1" onclick="pressminus1();">-</button>
+<h1 class="long" id="displaytext4"><span name="d2" id="placeid4"/></h1>
+<button class="depth" id="but2" onclick="pressplus1();">+</button><textarea name="example2" id="input1" class="inputclass"cols="20" rows="2" wrap="hard">Plenary: </textarea>
+
+
+
+
+
+
+<button class="depth" id="but1" onclick="pressminus1();">-</button>
+
+
+<button class="depth" id="but2" onclick="pressplus1();">+ </button><textarea name="example2" id="input1" class="inputclass" cols="20" rows="2" wrap="hard">Starter: </textarea><br>
+
+
+
+
+
+ <textarea name="objectives" class="depthtext" cols="40" rows="2" wrap="hard">Objective(s): </textarea><br><br>
+
+
+
+
+<div id="settings"><h4 id="settingstext" onclick="settingsChange();">⚒</h4></div>
+
+
+		#play:before{
+		z-index: -1;
+		position:absolute;
+		display: block;
+		text-align: center;
+		top:30%;
+		right: 20%;
+		content: "▶️⎮⎮";
+		font-size: 50vmin;
+		font-weight: bold;
+		opacity: .1;
+	}
+	
+		#play:hover{
+		position:absolute;
+		display: block;
+		text-align: center;
+		top:30%;
+		right: 20%;
+		content: "▶︎◼︎";
+		font-size: 50vmin;
+		opacity: .99;
+	}
+	
+
+
+		.long{
+			 overflow:visible;
+		font-family: courier;
+				font-size: 20vh;
+				vertical-align: center;
+				text-align:center;
+		color: black;
+		 display: block;
+		 margin:0;
+		 padding: 0;
+		 text-transform: uppercase;
+		 cursor:hand;	
+		 margin-top: 0;
+	}
+
+
+
+				  position: relative;
+  top: 30%;
+  transform: translateY(-30%)
+
+
+
+
+
+button
+	{
+		font-family: courier;
+		font-weight: bold;
+		font-size: 10vmin;
+
+		-webkit-transition: color .5s linear, background-color .5s ease-in-out;
+	-moz-transition: color .5s linear, background-color .5s ease-in-out;
+	-o-transition: color .5s linear, background-color .5s ease-in-out;
+	transition: color .5s linear, background-color .5s ease-in-out;
+	display: inline;
+	}
+	button:hover
+	{
+		font-family: courier;
+		font-weight: bold;
+		font-size: 10vmin;
+		
+		background-color: dark silver;
+			-webkit-transition: background-color .25s ease-in-out;
+	-moz-transition: background-color .25s ease-in-out;
+	-o-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
+	display: inline;
+	}
+
+	
+
+
+
+<script> 
+
+
+function settingsChange()
+{
+	//alert("hi");
+//	document.getElementById('displaytext').classList.toggle('wide');
+	//document.getElementsByClassName('depth').classList.toggle('depthhide');
+//	clearTimer();
+
+/*
+	var elements = document.getElementsByClassName('depth');
+   for(var i = elements.length - 1; i >= 0; --i) {
+  elements[i].className = 'depthhide';
+  */
+  
+ // document.querySelector('depth').classList.toggle('depthhide');
+ // document.getElementsByClassName('depth').classList.toggle('depthhide');
+  toggle('depth');
+}
+
+
+
+function toggle(classname){
+    var elements = document.getElementsByClassName(classname)
+
+    for (var i = 0; i < elements.length; i++){
+	    
+	 // var pp=displayState;
+	    if(elements[i].style.visibility ==="visible")
+	    {elements[i].style.visibility = 'hidden';}
+       // elements[i].style.display = displayState;
+       else
+       {
+        elements[i].style.visibility = 'visible';
+    }
+    }
+}
+
+//toggle('block'); // Shows
+//toggle('none'); // hides
+
+
+//  elements[i].className = 'depthhide';
+
+function pressminus1()
+{
+	//alert("ok")
+	if(secondsAdded1<=60)
+	{
+		secondsAdded1="0";
+		return;
+	}
+	var calc = Math.floor((window.secondsAdded1/60));
+	calc = (calc*60)-60;
+	window.secondsAdded1 = calc;
+	window.startTime = new Date();
+	window.startTime.setSeconds ( startTime.getSeconds() + window.secondsAdded1 );
+}
+
+function pressplus1()
+{
+	var calc = window.secondsAdded1 + 60;
+		 calc = Math.round(calc);
+	
+	window.secondsAdded1 = calc;
+	window.startTime = new Date();
+	window.startTime.setSeconds ( startTime.getSeconds() + window.secondsAdded1 );
+	
+	
+}
+
+function Octal()
+{
+	          //Octal
+        window.b = seconds.toString(8);
+     b = ("00000" + b).slice(-2); 
+     b=b.toUpperCase();
+     
+        window.c = minutes.toString(8);
+     c = ("00000" + c).slice(-2); 
+     c=c.toUpperCase();
+     
+             window.d = hours.toString(8);
+     d = ("00000" + d).slice(-2); 
+     d=d.toUpperCase();
+}
+
+function Denary()
+{
+	     //denary
+        window.b = seconds.toString(10);
+     b = ("00000" + b).slice(-2); 
+     b=b.toUpperCase();
+     
+        window.c = minutes.toString(10);
+     c = ("00000" + c).slice(-2); 
+     c=c.toUpperCase();
+     
+             window.d = hours.toString(10);
+     d = ("00000" + d).slice(-2); 
+     d=d.toUpperCase();
+}
+
+function Hexadecimal()
+{
+	     //Hexadecimal
+        window.b = seconds.toString(16);
+     b = ("00000" + b).slice(-2); 
+     b=b.toUpperCase();
+     
+        window.c = minutes.toString(16);
+     c = ("00000" + c).slice(-2); 
+     c=c.toUpperCase();
+     
+             window.d = hours.toString(16);
+     d = ("00000" + d).slice(-2); 
+     d=d.toUpperCase();
+}
+
+function Binary()
+{
+		   //binary
+   window.b = seconds.toString(2);
+     b = ("00000" + b).slice(-6); 
+     b=b.toUpperCase();
+     
+        window.c = minutes.toString(2);
+     c = ("00000" + c).slice(-6); 
+     c=c.toUpperCase();
+     
+             window.d = hours.toString(2);
+     d = ("00000" + d).slice(-6); 
+     d=d.toUpperCase();
+     
+}
+
+
+</script>
+
+
+
+
+/*
+function endSound(soundFile){ 
+	 if (window.differenceInSeconds===0){ 
+		     var snd = new Audio(soundFile); 
+snd.play();
+//alert("hah");
+   return;
+ }
+ } 
+*/
+
+
+
+
+
+	
+	function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+
+// Launch fullscreen for browsers that support it!
+launchFullScreen(document.documentElement);
+	//window.open("cd9.html","fs","fullscreen=yes")
+	
+
+
+
+
+function clearTimer()
+{
+	// document.write("finish");
+    
+}
+
+
+
+<div id="iconplaypause">
+
+<button type="button" onclick="timerPress();" id="placeid1" id="iconplaypause"/>
+
+</div>
+
+
+content: "▶︎";
+
+
+
+
+	#play
+	{
+		
+		background-color: transparent;
+		display: block;
+top:25%;
+position: relative;
+
+margin:0;
+padding:0;
+
+	}
+
+
+
+
+ function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+  pom.click();
+}
+
+
+
+ margin-left: -75px;
+   margin-top: -10px;
+
+//from search box
+
+   margin-left: -150px;
+   margin-top: -10px;
+
+
+
+vqplanImage4v2.png
+
+
+
+	<!-- 
+		 -webkit-transition: color 4.0s linear, background-color .5s ease-in-out;
+	-->
+style="text-transform:capitalize"
+
+
+
+
+http://vqplan.com/beta/txt.php?Topic=Testing+System&ObjectiveTitle=ObTitle1+Other&ObjectiveTitle=ObTitle2+Other&ObjectiveTitle=ObTitle3+Other&Objective=To+Understand+Other
+
+
+
+
+
+
+
+
+<div style="border:1px solid #000033; padding:10px; overflow:hidden; background:white; width:371px" >
+  <form action="http://www.standardstoolbox.com/search_public.php?ac=public_search" method="post" name="frm" target="_blank" >
+    <input type="hidden" name="ac" value="public_search" />
+    <h2 style="padding:0 0 10px 0; margin:0; color:#3399FF;">Find Standards</h2>
+    <select name="state" id="cmbState" style="float:left; width:115px; height:22px; border:1px solid #819CBA; font-size:12px; padding-top:1px;">
+      <option value="CC" selected="selected">Common Core (US) </option>
+      <option value="UK" >United Kingdom (UK) </option>
+      <option value="AL" >Alabama </option>
+      <option value="AK" >Alaska </option>
+      <option value="AR" >Arkansas </option>
+      <option value="AZ" >Arizona </option>
+      <option value="CA" >California </option>
+      <option value="CO" >Colorado </option>
+      <option value="CT" >Connecticut </option>
+      <option value="DC" >District of Columbia </option>
+      <option value="DE" >Delaware </option>
+      <option value="FL" >Florida </option>
+      <option value="GA" >Georgia </option>
+      <option value="HI" >Hawaii </option>
+      <option value="IA" >Iowa </option>
+      <option value="ID" >Idaho </option>
+      <option value="IL"  >Illinois </option>
+      <option value="IN" >Indiana </option>
+      <option value="KS" >Kansas </option>
+      <option value="KY" >Kentucky </option>
+      <option value="LA" >Louisiana </option>
+      <option value="MA" >Massachusetts </option>
+      <option value="MD" >Maryland </option>
+      <option value="ME" >Maine </option>
+      <option value="MI" >Michigan </option>
+      <option value="MN" >Minnesota </option>
+      <option value="MO" >Missouri </option>
+      <option value="MS" >Mississippi </option>
+      <option value="MT" >Montana </option>
+      <option value="NC" >North Carolina </option>
+      <option value="NATL" >National </option>
+      <option value="ND" >North Dakota </option>
+      <option value="NE" >Nebraska </option>
+      <option value="NH" >New Hampshire </option>
+      <option value="NJ" >New Jersey </option>
+      <option value="NM" >New Mexico </option>
+      <option value="NV" >Nevada </option>
+      <option value="NY" >New York </option>
+      <option value="OH" >Ohio </option>
+      <option value="OK" >Oklahoma </option>
+      <option value="OR" >Oregon </option>
+      <option value="WY" >Wyoming </option>
+      <option value="PA" >Pennsylvania </option>
+      <option value="RI" >Rhode Island </option>
+      <option value="SC" >South Carolina </option>
+      <option value="SD" >South Dakota </option>
+      <option value="TN" >Tennessee </option>
+      <option value="TX" >Texas </option>
+      <option value="UT" >Utah </option>
+      <option value="VA" >Virginia </option>
+      <option value="VT" >Vermont </option>
+      <option value="WA" >Washington </option>
+      <option value="WI" >Wisconsin </option>
+      <option value="WV" >West Virginia </option>
+      <option value="BC" >British Columbia </option>
+    </select>
+    <select name="cmbGrade" id="cmbGrade" style="float:left; width:81px; height:22px; border:1px solid #819CBA; margin-left:8px; margin-right:8px; font-size:12px; padding-top:1px;">
+      <option value="K" selected="selected" >Grade K</option>
+      <option value="1" >Grade 1</option>
+      <option value="2" >Grade 2</option>
+      <option value="3" >Grade 3</option>
+      <option value="4" >Grade 4</option>
+      <option value="5" >Grade 5</option>
+      <option value="6" >Grade 6</option>
+      <option value="7" >Grade 7</option>
+      <option value="8" >Grade 8</option>
+      <option value="9" >Grade 9</option>
+      <option value="10" >Grade 10</option>
+      <option value="11" >Grade 11</option>
+      <option value="12" >Grade 12</option>
+    </select>
+    <select name="cmbSubject" id="cmbSubject" style="float:left; width:159px; height:22px; border:1px solid #819CBA; margin:0; padding:0; font-size:12px; padding-top:1px;">
+      <option value="ELA" selected="selected">English Language Arts</option>
+      <option value="MAT">Mathematics</option>
+      <option value="SCI">Science</option>
+      <option value="SOC">Social Studies</option>
+    </select>
+
+    <div style="width:100%; float:left; margin-top:10px; overflow:hidden;">
+      <input type="submit" name="Submit3" value="Display" style="float:left;" />
+  </div>
+  </form>
+</div>
+
+
+
+function isLengthOfOne(value,index,array){
+	
+	return value.length===1;
+}
+
+
+
+<div id='showCD'></div><!--showCD end-->
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+
+
+
+&nbsp;&nbsp;&nbsp;<i class="fa fa-magic">Writing</i> &nbsp;&nbsp;&nbsp;
+
+
+
+
+<a title="Lucky VQPlan" > 	<img id="vqplanLogo" src="vqplan3.gif" onclick="buttonPressVVVQPlan();"    alt="Vqplan logo" >
+</a><br> 
+
+
+#idButtonLeftVeryQuick
+{
+font-family: FontAwesome;
+font-size: 2em;
+
+
+
+
+top: 56%; 
+left:40%;
+opacity: 0.8;
+transition: opacity .75s ease-in-out;
+-moz-transition: opacity .75s ease-in-out;
+-webkit-transition: opacity .75s ease-in-out;
+
+transition: font-size .1s ease-in-out;
+-moz-transition: font-size .1s ease-in-out;
+-webkit-transition: font-size .1s ease-in-out;
+}
+
+#idButtonLeftVeryQuick:hover
+{
+font-size: 3em;
+cursor: pointer;
+
+opacity: 1;
+}
+
+#idButtonRightPlan
+{
+
+font-family: FontAwesome;
+font-size: 2em;
+
+
+
+
+top: 56%; 
+right:40%;
+opacity: 0.8;
+transition: opacity .75s ease-in-out;
+-moz-transition: opacity .75s ease-in-out;
+-webkit-transition: opacity .75s ease-in-out;
+
+transition: font-size .1s ease-in-out;
+-moz-transition: font-size .1s ease-in-out;
+-webkit-transition: font-size .1s ease-in-out;
+}
+
+#idButtonRightPlan:hover
+{
+font-size: 3em;
+cursor: pointer;
+
+opacity: .9;
+}
+
+
+
+#idInputTopic
+{
+
+position: fixed;
+
+left: 45%;
+top: 50%; 
+
+}
+
+
+
+
+<button id="idButtonIframeImages" class="vqplan" type="button" title="Images" style="float:right;" onClick="document.getElementById('idIframeExternalResources').src='https://www.flickr.com/search/?q=StudyTopic'" >&nbsp;&nbsp;&nbsp;<i class="fa fa-image"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonIframeNew" class="vqplan" type="button" title="News" style="float:right;" onClick="document.getElementById('idIframeExternalResources').src='http://www.reddit.com/search?q=%22StudyTopic%22'">&nbsp;&nbsp;&nbsp;<i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonIframeSocial" class="vqplan" type="button" title="Social" style="float:right;" onClick="document.getElementById('idIframeExternalResources').src='https://mobile.twitter.com/search?q=%22StudyTopic%22'">&nbsp;&nbsp;&nbsp;<i class="fa fa-group"></i>&nbsp;&nbsp;&nbsp;</button>
+<button id="idButtonIframeVideo" class="vqplan" type="button" title="Video" style="float:right;" onClick="document.getElementById('idIframeExternalResources').src='https://m.youtube.com/results?q=%22StudyTopic%22'">&nbsp;&nbsp;&nbsp;<i class="fa fa-video-camera"></i>&nbsp;&nbsp;&nbsp;</button>
+
+
+,&quot_self&quot;
+
+
+
+<a href="http://en.wiktionary.org/wiki/StudyTopic" title="StudyTopic Definition" class="exlink" target="_blank">
+	WikiDictionary: </a><br>
+<a href="http://www.macmillandictionary.com/thesaurus/american/StudyTopic" title="StudyTopic Synonyms" class="exlink" target="_blank">Macmillan</a>
+<br>
+<a href="https://www.google.com/webhp?#q=%7EStudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx" title=".doc .docx .ppt .pptx pdf" class="exlink" target="_blank">G Search</a>
+<br>
+<a href="https://www.google.com/webhp?#q=StudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I" title="StudyTopic Lucky Resource" class="exlink" target="_blank">Lucky Resource</a>
+</h2>
+
+
+
+a.linkclass:link{color:lightgray;
+text-decoration:none;}
+a.linkclass:visited {color:lightgray;} 
+a.linkclass:hover {color:white;
+text-decoration: none;}
+
+a.current:link{color:white;
+text-decoration:none;}
+a.current:visited {color:white;} 
+a.current:hover{color:white;
+text-decoration: none}
+
+
+a.exlink:link{color:lightblue;
+text-decoration:none;}
+a.exlink:visited {color:lightblue;} 
+a.exlink:hover {color:#bcbcff;
+text-decoration: underline;}
+
+
+ onchange="alert('hi');"
+
+
+onblur="alert('blur');"
+
+
+
+//alert(theURLs.url);
+//theURLs2[i].url = theURLs2[i].url.replace(new RegExp(toReplace,'g'), replaceWith);
+//alert(theURLs2[0].url);
+//alert('ok');
+
+
+for(i in foo) {
+    console.log (i, foo[i])
+}
+
+
+
+var dest = location.search.replace(/^.*?\=/, '');
+
+var dest = unescape(location.search.replace(/^.*?\=/, '')).replace(/\+/g, " "); 
+
+
+			for(i in theURLs) {
+    console.log (i, theURLs[i])
+}
+
+
+
+function replaceWordST()
+{
+	for(prop in theURLs)
+	{
+		
+	}
+	
+	var toReplace = "StudyTopic";      
+var replaceWith = input ;
+for(i=0;i<theURLs.length;i++){
+theURLs[i].url = theURLs[i].url.replace(new RegExp(toReplace,'g'), replaceWith);
+}
+}
+
+
+
+person = [];
+person.push({name:'John Smith',description:'John Smith is tall.',details:'John Smith has worked for us for 10 years.'})
+person.push({name:'Michael Smith',description:'Michael Smith is tall.',details:'Michael Smith has worked for us for 10 years.'})
+person.push({name:'Linda Smith',description:'Linda Smith is tall.',details:'Linda Smith has worked for us for 10 years.'})
+
+
+for(i in theURLs) {
+    console.log (i, theURLs[i])
+}
+
+
+
+window.open(&quot;https://www.flickr.com/search/?q=StudyTopic&quot;);window.open(&quot;https://www.google.com/?gws_rd=ssl#newwindow=1&tbm=nws&q=%StudyTopic%22&quot;);window.open(&quot;http://en.wikipedia.org/wiki/StudyTopic&quot;); window.open(&quot;http://www.reddit.com/search?q=%22StudyTopic%22&quot;);window.open(&quot;https://twitter.com/search?q=%22StudyTopic%22&quot;);window.open(&quot;https://youtube.com/results?q=%22StudyTopic%22&quot;);window.open(&quot;http://www.pinterest.com/search/pins/?q=StudyTopic&quot;);window.open(&quot;http://en.wiktionary.org/wiki/StudyTopic&quot;);window.open(&quot;https://www.google.com/webhp?#q=%7EStudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&quot;);window.open(&quot;https://www.google.com/webhp?#q=%7EStudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&quot;);window.open(&quot;https://www.google.com/webhp?#q=StudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I&quot;);window.open(&quot;https://www.google.com/webhp?#q=StudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I&quot;);
+
+
+https://search.yahoo.com/search?n=100&p=%22cats%22&btnI=I
+
+https://www.bing.com/search?q=%22reading%22+worksheet+filetype%3Apdf+%7C+filetype%3Adoc&go=Submit&qs=n&form=QBLH&pq=%22reading%22+worksheet+filetype%3Apdf+%7C+filetype%3Adoc&sc=8-47&
+
+https://www.bing.com/search?q=%22StudyTopic%22+%22lesson+plan%22+filetype%3Apdf+%7C+filetype%3Adoc+%7C+filetype%3Adocx+%7C+filetype%3Appt++%7C+filetype%3Apptx++&go=Submit&qs=n&form=QBRE&pq=%22reading%22+%22lesson+plan%22+filetype%3Apdf+%7C+filetype%3Adoc+%7C+filetype%3Adocx+%7C+filetype%3Appt+%7C+filetype%3Apptx
+
+
+https://www.yandex.com/yandsearch?text=%22StudyTopic%22%22lesson%20plan%22%20&lr=87&lang=en&mime=pdf&mime=rtf&mime=doc&mime=ppt&mime=docx&mime=pptx&mime=odt&mime=odp&csg=0%2C447%2C29%2C1%2C0%2C0%2C0
+
+
+&lr=lang_en
+
+
+
+<a href="http://en.wikipedia.org/wiki/StudyTopic" contenteditable="true"  class="exlink" target="_blank">
+Wikipedia: http://en.wikipedia.org/wiki/StudyTopic</a><br>
+<a href="https://www.flickr.com/search/?q=StudyTopic" contenteditable="true"  class="exlink" target="_blank">
+Flickr: https://www.flickr.com/search/?q=StudyTopic</a><br>
+<a href="https://www.google.com/?gws_rd=ssl#newwindow=1&tbm=nws&q=%StudyTopic%22" contenteditable="true"  class="exlink" target="_blank">
+Google News: https://www.google.com/?gws_rd=ssl#newwindow=1&tbm=nws&q=%StudyTopic%22</a><br>
+<a href="http://www.pinterest.com/search/pins/?q=StudyTopic" contenteditable="true"  class="exlink" target="_blank">
+Pinterest: http://www.pinterest.com/search/pins/?q=StudyTopic</a><br>
+<a href="http://www.reddit.com/search?q=%22StudyTopic%22" contenteditable="true"  class="exlink" target="_blank">
+Reddit: http://www.reddit.com/search?q=%22StudyTopic%22</a><br>
+<a href="https://twitter.com/search?q=%22StudyTopic%22" contenteditable="true"  class="exlink" target="_blank">
+Twitter: https://twitter.com/search?q=%22StudyTopic%22</a><br>
+<a href="http://en.wiktionary.org/wiki/StudyTopic" tabindex="12"  contenteditable="true"  class="exlink" target="_blank">
+WikiDictionary: http://en.wiktionary.org/wiki/StudyTopic</a><br>
+<br>
+<a href="https://www.google.com/webhp?#q=%7EStudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx" contenteditable="true"  class="exlink" target="_blank">
+Google "lesson plan": https://www.google.com/webhp?#q=%7EStudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx</a><br>
+<a href="https://www.google.com/webhp?#q=%7EStudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx" contenteditable="true"  class="exlink" target="_blank">
+Google "worksheet": https://www.google.com/webhp?#q=%7EStudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx</a><br>
+<a href="https://www.google.com/webhp?#q=StudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I" contenteditable="true"  class="exlink" target="_blank">
+Download 'lesson plan': https://www.google.com/webhp?#q=StudyTopic+%22lesson+plan%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I</a><br>
+<a href="https://www.google.com/webhp?#q=StudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I" contenteditable="true"  class="exlink" target="_blank">
+Download 'worksheet': https://www.google.com/webhp?#q=StudyTopic+%22worksheet%22+filetype:doc+%7C+filetype:ppt+%7C+filetype:pdf+%7C+filetype:docx+%7C+filetype:pptx&btnI=I</a><br>
+
+
+
+http://docs.google.com/viewer?url=http%3A%2F%2Fvqplan.com%2FCh35.ppt
+
+http://docs.google.com/viewer?url=vqplan.com%2FCh35.ppt
+
+
+	*html,body{display:none;}
+* { margin: 0 !important; padding: 0 !important; }
+
+#idDivHeaderContainer{
+	display: none;
+	visibility: hidden;
+}
+
+@media print {
+
+
+#idDivThePlan{
+	display: block;
+visibility: visible;
+vertical-align: middle;
+overflow: visible;
+width: 100%;
+height:auto;
+margin-top: 15%;
+
+h1{opacity: 1;
+padding-bottom: 10px;
+}
+h2{opacity: 1;
+padding-bottom: 5px;
+}
+}
+
+}
+
+
+
+<select id="test"  name="foo" onFocus="expand(this)" onBlur="unexpand(this)">
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+<option >option1</option>
+<option >option2</option>
+<option >option3</option>
+<option >option4</option>
+<option >option5</option>
+
+</select>
+
+
+
+-moz-column-count: auto;-moz-column-width: 200px;-webkit-column-count: auto;-webkit-column-width: 200px;column-count: auto;column-width: 200px;
+
+
+
+#vqplanLogo
+{
+border-radius: 20px;
+opacity: 1;
+width: 200px;
+height: 150px;
+position: relative;
+left: 50%;
+top: 25%; 
+margin-left: -100px;
+margin-top: -40px;
+transition: opacity .75s ease-in-out;
+-moz-transition: opacity .75s ease-in-out;
+-webkit-transition: opacity .75s ease-in-out;
+}
+
+#vqplanLogo:hover
+{
+opacity: 1;
+transition: opacity .4s ease-in-out;
+-moz-transition: opacity .4s ease-in-out;
+-webkit-transition: opacity .4s ease-in-out;
+cursor: pointer;
+}
+
+
+
+
+.vqplan3
+{
+font-weight: bold;
+font-size: large;
+background-color: #e6e6e6;
+border:2px solid lightgray;
+}
+
+.vqplan3:hover
+{
+font-weight: bold;
+font-size: large;
+background-color: #c5c5c5;
+border:2px solid black;  
+}
+
+
+
+
+	position: relative;
+background-color: #fffaf4;
+margin-top:4%;
+float: right;
+width:36%;
+margin-right: 2%;
+clear: both;
+	
+
+
+<div id="add" style="display:inline;float:right;position:relative;bottom:0;clear:both;" class="vqhelp"   >
+Improvements: Do you have something you would like adding? Send an <a href="mailto:niel@greenbambooshoots.com?subject=Improvements&ampbody=Dear%20Niel,%0D%0A%0D%0AWhat%20I%20would%20like%20to%20suggest%20is%20%0D%0A%0D%0AThe%20comments%20I%20have%20are%0D%0A" title="Send Email">email.</a> Your comments, suggestions and ideas will be listened to. 
+<br>
+</div><!--add end-->
+
+
+
+
+#add
+{
+cursor: hand;
+opacity: 0;
+transition: opacity 1.75s ease-in-out;
+-moz-transition: opacity 1.75s ease-in-out;
+-webkit-transition: opacity 1.75s ease-in-out;
+}
+
+#add:hover
+{
+opacity: 1;
+transition: opacity 1.75s ease-in-out;
+-moz-transition: opacity 1.75s ease-in-out;
+-webkit-transition: opacity 1.75s ease-in-out;
+}
+
+
+
+
+			//	alert(el);
+				//  document.getElementById('idTheText').innerHTML.set;
+		//	var line=	document.getElementById('idTheText').innerHTML.length;
+			//	document.getElementById('idTheText').innerHTML;
+			 var el = document.getElementById("idTheText");
+	var	lastLine =(el.childNodes.length)-1;
+	//	var	lastLineNumberCharacters = el.childNodes[lastline].innerHTML.length-1;
+			
+			alert (lastLine);
+
+var range = document.createRange();
+var sel = window.getSelection();
+range.setStart(el.childNodes[0],2);
+range.collapse(true);
+sel.removeAllRanges();
+sel.addRange(range);
+       
+
+
+
+document.getElementById('youridhere').scrollIntoView();
+
+
+
+
+mailto:test@test.com
+
+
+
+<div id="info"><a href="http://threejs.org" target="_blank">three.js css3d</a> - periodic table. <a href="https://plus.google.com/113862800338869870683/posts/QcFk5HrWran" target="_blank">info</a>.</div>
+
+
+
+
+
+
+.vqplan
+{
+font-size: medium;
+color: black; 
+margin-top: 10px;
+background-color: #e6e6e6;
+border:2px solid lightgray;
+}
+
+
+
+
+.vqplan:hover
+{   
+color: black; 
+margin-top: 10px;
+background-color: #c5c5c5;
+border:2px solid black;  
+cursor: pointer;
+}
+
+
+location.href='tel:+77026083073';
+
+
+
+
+
+
+
+mailto:niel@greenbambooshoots.com?subject=vqplan&body=Dear%20Niel,%0D%0A%0D%0AWhat%20I%20would%20like%20to%20suggest%20is%20%0D%0A%0D%0AThe%20comments%20I%20have%20are%0D%0A
+
+
+'some other',
+
+'window.open("http://vqplan.com")'
+
+
+cursorPosition='objectives';setEnd();
+
+<body onload="setTimeout(function(){window.close();},1500);"></body>
+
+
+function closer(){
+			setTimeout(function(){window.close();},1500);
+			setTimeout(window.close(),1500);
+			alert('i');
+			}
+			closer();
+			
+			
+			
+
+
+
+
+
+
+
+
+

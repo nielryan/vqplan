@@ -1,0 +1,218 @@
+[04-Jan-2015 05:19:52 Europe/London] PHP Warning:  include(PHPPowerPoint.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/greenbam/public_html/vqplan/ppt/index.php on line 35
+[04-Jan-2015 05:19:52 Europe/London] PHP Warning:  include(PHPPowerPoint.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/greenbam/public_html/vqplan/ppt/index.php on line 35
+[04-Jan-2015 05:19:52 Europe/London] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'PHPPowerPoint.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php:../Classes/') in /home/greenbam/public_html/vqplan/ppt/index.php on line 35
+[04-Jan-2015 05:19:52 Europe/London] PHP Warning:  require_once(PHPPowerPoint.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/IOFactory.php on line 30
+[04-Jan-2015 05:19:52 Europe/London] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'PHPPowerPoint.php' (include_path='.:/usr/lib/php:/usr/local/lib/php:../Claqses/') in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/IOFactory.php on line 30
+[04-Jan-2015 05:20:36 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File ./myschool.png not found!' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/Drawing.php:121
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(297): PHPPowerPoint_Shape_Drawing->setPath('./myschool.png')
+#1 /home/greenbam/public_html/vqplan/ppt/index.php(60): createTemplatedSlide(Object(PHPPowerPoint))
+#2 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/Drawing.php on line 121
+[04-Jan-2015 05:28:10 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:28:10 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:28:10 Eupope/London] PHP Warning:  Division by zero in /home/greenbam/pu`lic_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:28:10 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:28:10 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:28:10 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:29:05 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:29:05 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:29:05 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:29:05 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:29:05 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:29:05 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:30:03 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:30:03 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:30:03 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:30:03 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:30:03 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:30:03 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:31:26 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:26 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:26 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:26 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:26 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:26 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:31:51 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:51 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:51 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:51 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:51 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:31:51 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:32:38 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:32:38 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:32:38 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:32:38 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:32:38 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:32:38 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:33:19 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:33:19 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:33:19 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:33:19 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:33:19 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 05:33:19 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(261): PHPPowerPoint_Writer_PowerPoint2007->save('/home/greenbam/...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 05:53:29 Europe/London] PHP Notice:  Use of undefined constant theFileName - assumed 'theFileName' in /home/greenbam/public_html/vqplan/ppt/index.php on line 265
+[04-Jan-2015 05:57:47 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file 2015/01/04/05.01.47.Suntitllle.pptx.' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php:291
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(268): PHPPowerPoint_Writer_PowerPoint2007->save('2015/01/04/05.0...')
+#1 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php on line 291
+[04-Jan-2015 05:59:15 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file 2015/01/04/05.01.15.Suntitllle.pptx.' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php:291
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(269): PHPPowerPoint_Writer_PowerPoint2007->save('2015/01/04/05.0...')
+#1 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php on line 291
+[04-Jan-2015 06:09:14 Europe/London] PHP Notice:  Undefined index: test in /home/greenbam/public_html/vqplan/ppt/index.php on line 277
+[04-Jan-2015 06:10:06 Europe/London] PHP Notice:  Undefined index: test in /home/greenbam/public_html/vqplan/ppt/index.php on line 277
+[04-Jan-2015 06:51:19 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file 2015.01.04.06.01.19.Sunalright<br />.pptx.' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php:291
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(274): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04.06.0...')
+#1 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php on line 291
+[04-Jan-2015 06:54:32 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file 2015.01.04.06.01.32.Sunalright<br />.pptx.' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php:291
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(275): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04.06.0...')
+#1 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php on line 291
+[04-Jan-2015 06:54:41 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file 2015.01.04.06.01.41.Sunalright<br />.pptx.' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php:291
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(275): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04.06.0...')
+#1 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php on line 291
+[04-Jan-2015 06:55:26 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'Could not close zip file 2015.01.04.06.01.26.Sunalright<br />.pptx.' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php:291
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(275): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04.06.0...')
+#1 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php on line 291
+[04-Jan-2015 07:32:36 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:32:36 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:32:36 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:32:36 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:32:36 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:32:36 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(275): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04 07.3...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 07:33:01 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:33:01 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:33:01 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:33:01 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:33:01 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:33:01 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(275): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04 07.3...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 07:34:12 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:34:12 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:34:12 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:34:12 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:34:12 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 07:34:12 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(275): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04 07.3...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 07:34:37 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  not found!' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/Drawing.php:121
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/index.php(312): PHPPowerPoint_Shape_Drawing->setPath('')
+#1 /home/greenbam/public_html/vqplan/ppt/index.php(60): createTemplatedSlide(Object(PHPPowerPoint))
+#2 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/Drawing.php on line 121
+[04-Jan-2015 07:40:51 Europe/London] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/greenbam/public_html/vqplan/ppt/index.php on line 333
+[04-Jan-2015 08:09:22 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 329
+[04-Jan-2015 08:09:33 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 329
+[04-Jan-2015 08:11:11 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 329
+[04-Jan-2015 08:11:11 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 330
+[04-Jan-2015 08:11:11 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 331
+[04-Jan-2015 08:11:11 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 332
+[04-Jan-2015 08:14:34 Europe/London] PHP Warning:  file_get_contents($theFileName) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/greenbam/public_html/vqplan/ppt/index.php on line 329
+Y04-Jan-2015 08:15:38 Europe/London] PHP Warning:  file_get_contents(%24theFileName) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/greenbam/public_html/vqplan/ppt/index.php on line 328
+[04-Jan-2015 08:16:42 Europe/London] PHP Warning:  file_get_contents(http://vqplan.com/ppt/%24theFileName) [<a href='function.file-get-contents'>function.file-get-cmntents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/greenbam/public_html/vqplan/ppt/index.php on line 328
+[04-Jan-2015 08:17:04 Europe/London] PHP Warning:  file_get_contents(http://vqplan.com/ppt/2015.01.04+08.17.04+Sun+work.pptx) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/greenbam/public_html/vqplan/ppt/index.php on line 328
+[04-Jan-2015 08:25:54 Europe/London] PHP Fatal error:  Call to undefined function output_file() in /home/greenbam/public_html/vqplan/ppt/index.php on line 330
+[04-Jan-2015 08:28:43 Europe/London] PHP Fatal error:  Call to undefined function open() in /home/greenbam/public_html/vqplan/ppt/index.php on line 332
+[04-Jan-2015 08:30:21 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:27) in /home/greenbam/public_html/vqplan/ppt/index.php on line 332
+[04-Jan-2015 08:31:02 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:3) in /home/greenbam/public_html/vqplan/ppt/index.php on line 308
+[04-Jan-2015 08:31:58 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:2) in /home/greenbam/public_html/vqplan/ppt/index.php on line 307
+[04-Jan-2015 08:33:55 Europe/London] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/greenbam/public_html/vqplan/ppt/index.php:2) in /home/greenbam/public_html/vqplan/ppt/index.php on line 307
+[04-Jan-2015 08:45:51 Europe/London] PHP Parse error:  syntax error, unexpected T_STRING, expecting ',' or ';' in /home/greenbam/public_html/vqplan/ppt/index.php on line 334
+[04-Jan-2015 10:49:18 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 10:49:18 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 10:49:18 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 10:49:18 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 10:49:18 Europe/London] PHP Warning:  Division by zero in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Shape/BaseDrawing.php on line 166
+[04-Jan-2015 10:49:18 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(280): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04_10.4...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 11:07:11 Europe/London] PHP Fatal error:  Uncaught exception 'Exception' with message 'File  does not exist' in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php:174
+Stack trace:
+#0 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php(137): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->_getImageMimeType('')
+#1 /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007.php(216): PHPPowerPoint_Writer_PowerPoint2007_ContentTypes->writeContentTypes(Object(PHPPowerPoint))
+#2 /home/greenbam/public_html/vqplan/ppt/index.php(248): PHPPowerPoint_Writer_PowerPoint2007->save('2015.01.04_11.0...')
+#3 {main}
+  thrown in /home/greenbam/public_html/vqplan/ppt/PHPPowerPoint/Writer/PowerPoint2007/ContentTypes.php on line 174
+[04-Jan-2015 11:12:21 Europe/London] PHP Notice:  Undefined variable: theTitle in /home/greenbam/public_html/vqplan/ppt/index.php on line 84
+[04-Jan-2015 11:32:17 Europe/London] PHP Notice:  Undefined variable: objWriter in /home/greenbam/public_html/vqplan/ppt/index.php on line 146
+[04-Jan-2015 11:32:17 Europe/London] PHP Fatal error:  Call to a member function save() on a non-object in /home/greenbam/public_html/vqplan/ppt/index.php on line 146
+[04-Jan-2015 11:47:25 Europe/London] PHP Fatal error:  Call to undefined function clean() in /home/greenbam/public_html/vqplan/ppt/index.php on line 55
+[04-Jan-2015 11:49:15 Europe/London] PHP Fatal error:  Call to undefined function clean() in /home/greenbam/public_html/vqplan/ppt/index.php on line 55
+[04-Jan-2015 11:49:22 Europe/London] PHP Fatal error:  Call to undefined function clean() in /home/greenbam/public_html/vqplan/ppt/index.php on line 55
+[04-Jan-2015 11:50:45 Europe/London] PHP Fatal error:  Call to undefined function clean() in /home/greenbam/public_html/vqplan/ppt/index.php on line 55
+[04-Jan-2015 11:51:05 Europe/London] PHP Fatal error:  Call to undefined function clean() in /home/greenbam/public_html/vqplan/ppt/index.php on line 55
+[04-Jan-2015 11:53:26 Europe/London] PHP Fatal error:  Call to undefined function clean() in /home/greenbam/public_html/vqplan/ppt/index.php on line 55
